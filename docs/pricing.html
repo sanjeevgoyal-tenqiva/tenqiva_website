@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pricing — Tenqiva</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet" />
+  <style>
+    :root{--bg:#08090d;--bg2:#13151e;--text:#e4e2dd;--text-m:#7d7f8c;--accent:#d4f034;--accent2:#34b4f0;--accent3:#f07434;--border:rgba(255,255,255,.06);--r:14px;--font:'Bricolage Grotesque',sans-serif;--serif:'Newsreader',serif}
+    *{margin:0;padding:0;box-sizing:border-box}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+    a{color:var(--accent);text-decoration:underline}
+    nav{padding:18px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border)}
+    .logo{font-size:1.5rem;font-weight:700;text-decoration:none;color:var(--text)}.logo span{color:var(--accent)}
+    .back{color:var(--text-m);text-decoration:none;font-size:.88rem}.back:hover{color:var(--text)}
+    .pricing{max-width:1100px;margin:0 auto;padding:60px 24px 100px}
+    .pricing h1{font-size:2.4rem;font-weight:800;margin-bottom:6px;letter-spacing:-0.03em}
+    .pricing .sub{font-size:1rem;color:var(--text-m);margin-bottom:48px;max-width:500px}
+    .pricing h2{font-size:1.4rem;font-weight:700;margin-top:56px;margin-bottom:8px}
+    .pricing h2 span{color:var(--accent)}
+    .pricing .cat-desc{color:var(--text-m);font-size:.9rem;margin-bottom:24px}
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+    .card{background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);padding:32px 28px;transition:border-color .3s,transform .3s}
+    .card:hover{border-color:rgba(212,240,52,.15);transform:translateY(-3px)}
+    .card.pop{border-color:var(--accent);position:relative}
+    .card.pop::before{content:'Popular';position:absolute;top:-10px;right:20px;background:var(--accent);color:var(--bg);font-size:.68rem;font-weight:700;padding:3px 12px;border-radius:100px;text-transform:uppercase;letter-spacing:.05em}
+    .card h3{font-size:1rem;font-weight:700;margin-bottom:4px}
+    .price{font-size:2rem;font-weight:800;margin:12px 0 4px}
+    .price span{font-size:.85rem;font-weight:400;color:var(--text-m)}
+    .price-note{font-size:.78rem;color:var(--text-m);margin-bottom:16px}
+    .features{list-style:none;margin:0;padding:0}
+    .features li{font-size:.85rem;color:var(--text);padding:6px 0;border-top:1px solid var(--border)}
+    .features li::before{content:'✓';color:var(--accent);margin-right:8px;font-weight:700}
+    .btn-p{display:block;text-align:center;background:var(--accent);color:var(--bg);padding:12px;border-radius:100px;font-weight:700;font-size:.88rem;margin-top:20px;text-decoration:none;transition:transform .2s,box-shadow .3s}
+    .btn-p:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(212,240,52,.3)}
+    .btn-o{display:block;text-align:center;background:transparent;color:var(--text);padding:12px;border-radius:100px;font-weight:600;font-size:.88rem;margin-top:20px;text-decoration:none;border:1px solid rgba(255,255,255,.12);transition:border-color .3s}
+    .btn-o:hover{border-color:rgba(255,255,255,.3)}
+    .note{margin-top:56px;padding:24px;background:var(--bg2);border:1px solid var(--border);border-radius:var(--r);font-size:.88rem;color:var(--text-m)}
+    .note strong{color:var(--text)}
+    footer{border-top:1px solid var(--border);padding:24px 40px;text-align:center;font-size:.78rem;color:var(--text-m);margin-top:40px}
+    footer a{color:var(--text-m);margin:0 10px}
+    @media(max-width:768px){.cards{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="logo">tenqiva<span>.</span></a>
+    <a href="/" class="back">&larr; Back to Home</a>
+  </nav>
+
+  <div class="pricing">
+    <h1>Pricing</h1>
+    <p class="sub">Transparent pricing in Indian Rupees (₹). All prices are exclusive of GST (18%) unless stated otherwise.</p>
+
+    <!-- CONSULTING -->
+    <h2><span>01.</span> Consulting Services</h2>
+    <p class="cat-desc">Accelerated AI, Data & BI, Custom Software, Cloud & Infrastructure engagements.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Discovery</h3>
+        <div class="price">₹25,000 <span></span></div>
+        <div class="price-note">One-time assessment</div>
+        <ul class="features">
+          <li>2-hour discovery session</li>
+          <li>Current state assessment</li>
+          <li>Architecture recommendations</li>
+          <li>Written report with action plan</li>
+        </ul>
+        <a href="/#contact" class="btn-o">Get Started</a>
+      </div>
+      <div class="card pop">
+        <h3>Project Engagement</h3>
+        <div class="price">₹2,50,000+ <span></span></div>
+        <div class="price-note">Per project (scope-based)</div>
+        <ul class="features">
+          <li>Dedicated team assigned</li>
+          <li>Defined SOW &amp; milestones</li>
+          <li>Weekly progress reports</li>
+          <li>Source code &amp; documentation</li>
+          <li>30-day post-delivery support</li>
+        </ul>
+        <a href="/#contact" class="btn-p">Contact Us</a>
+      </div>
+      <div class="card">
+        <h3>Retainer</h3>
+        <div class="price">₹1,50,000 <span>/month</span></div>
+        <div class="price-note">Minimum 3-month commitment</div>
+        <ul class="features">
+          <li>80 hours/month dedicated</li>
+          <li>Priority support &amp; SLA</li>
+          <li>Monthly reviews</li>
+          <li>Flexible scope adjustment</li>
+          <li>Rollover unused hours (up to 20)</li>
+        </ul>
+        <a href="/#contact" class="btn-o">Get Started</a>
+      </div>
+    </div>
+
+    <!-- SAAS -->
+    <h2 style="margin-top:72px"><span>02.</span> SaaS Accelerators</h2>
+    <p class="cat-desc">Self-serve products with monthly or annual subscriptions.</p>
+    <div class="cards">
+      <div class="card">
+        <h3>Starter</h3>
+        <div class="price">₹2,999 <span>/month</span></div>
+        <div class="price-note">Billed monthly · Per user</div>
+        <ul class="features">
+          <li>Core product features</li>
+          <li>Up to 5 users</li>
+          <li>Email support</li>
+          <li>Standard SLA</li>
+        </ul>
+        <a href="/#contact" class="btn-o">Start Free Trial</a>
+      </div>
+      <div class="card pop">
+        <h3>Growth</h3>
+        <div class="price">₹7,999 <span>/month</span></div>
+        <div class="price-note">Billed monthly · Per workspace</div>
+        <ul class="features">
+          <li>All Starter features</li>
+          <li>Up to 25 users</li>
+          <li>Priority email &amp; chat support</li>
+          <li>API access</li>
+          <li>Custom integrations</li>
+        </ul>
+        <a href="/#contact" class="btn-p">Start Free Trial</a>
+      </div>
+      <div class="card">
+        <h3>Enterprise</h3>
+        <div class="price">Custom</div>
+        <div class="price-note">Annual billing · Unlimited users</div>
+        <ul class="features">
+          <li>All Growth features</li>
+          <li>Dedicated account manager</li>
+          <li>Custom SLA &amp; uptime guarantee</li>
+          <li>On-premise deployment option</li>
+          <li>SSO &amp; advanced security</li>
+          <li>Training &amp; onboarding</li>
+        </ul>
+        <a href="/#contact" class="btn-o">Contact Sales</a>
+      </div>
+    </div>
+
+    <div class="note">
+      <strong>Important Notes:</strong><br/>
+      • All prices are in Indian Rupees (₹/INR) and exclusive of GST (18%) unless stated otherwise.<br/>
+      • Payment can be made via UPI, credit/debit card, net banking, or bank transfer.<br/>
+      • For annual billing, a 15% discount is available on SaaS subscriptions.<br/>
+      • Custom pricing is available for startups, NGOs, and educational institutions.<br/>
+      • Please review our <a href="refund.html">Refund &amp; Cancellation Policy</a> before purchasing.<br/>
+      • For any billing queries, contact <a href="mailto:billing@tenqiva.com">billing@tenqiva.com</a>.
+    </div>
+  </div>
+
+  <footer>
+    <a href="/">Home</a> | <a href="terms.html">Terms</a> | <a href="privacy.html">Privacy</a> | <a href="refund.html">Refund Policy</a> | <a href="pricing.html">Pricing</a>
+    <br/>&copy; 2026 Tenqiva. All rights reserved.
+  </footer>
+</body>
+</html>
