@@ -194,6 +194,7 @@
       <a href="#accelerators">Accelerators</a>
       <a href="#services">Services</a>
       <a href="#why">Why Us</a>
+      <a href="pricing.html">Pricing</a>
       <a href="#contact" class="nav-cta">Get in Touch</a>
     </div>
     <button class="ham" id="ham" aria-label="Menu"><span></span><span></span><span></span></button>
@@ -473,14 +474,19 @@
           </div>
         </div>
         <div>
-          <div class="contact-form">
-            <input type="text" placeholder="Your Name" required />
-            <input type="email" placeholder="Email Address" required />
-            <input type="text" placeholder="Company / Organization" />
-            <input type="text" placeholder="Subject" />
-            <textarea placeholder="How can we help you?"></textarea>
-            <button class="btn-p" type="button" onclick="alert('Please email us at hello@tenqiva.com — form integration coming soon.')">Send Message</button>
-          </div>
+          <form class="contact-form" id="contactForm">
+            <input type="text" id="cfName" placeholder="Your Name" required />
+            <input type="email" id="cfEmail" placeholder="Email Address" required />
+            <input type="text" id="cfCompany" placeholder="Company / Organization" />
+            <input type="text" id="cfSubject" placeholder="Subject" />
+            <textarea id="cfMessage" placeholder="How can we help you?" required></textarea>
+            <button class="btn-p" type="submit">Send Message</button>
+            <p style="margin-top:12px;font-size:.78rem;color:var(--text-m)">
+              Prefer email? Write to us directly at
+              <a href="mailto:hello@tenqiva.com" style="color:var(--accent)">hello@tenqiva.com</a>.
+              We respond within one business day.
+            </p>
+          </form>
         </div>
       </div>
     </div>
@@ -491,16 +497,16 @@
     <div class="ft-inner">
       <div class="ft-brand">
         <a href="/" class="logo">tenqiva<span>.</span></a>
-        <p>Ten intelligent accelerators, shipped at velocity. Software consulting and SaaS products for enterprises worldwide.</p>
-        <p style="margin-top:12px;font-size:.78rem;color:var(--text-m)">CIN: {{CIN}} · GSTIN: {{GSTIN}}</p>
+        <p>Thirteen intelligent accelerators, shipped at velocity. Software consulting and SaaS products for enterprises worldwide.</p>
+        <p style="margin-top:12px;font-size:.78rem;color:var(--text-m)">{{COMPANY_NAME}}<br/>CIN: {{CIN}} · GSTIN: {{GSTIN}}</p>
       </div>
       <div class="ft-col">
         <h5>Accelerators</h5>
+        <a href="#accelerators">Jewellery Billing</a>
+        <a href="#accelerators">LeadPro</a>
+        <a href="#accelerators">MyPaintShop</a>
+        <a href="#accelerators">BrandKavach</a>
         <a href="#accelerators">BI Optimizer</a>
-        <a href="#accelerators">MoveIt</a>
-        <a href="#accelerators">AI Tester</a>
-        <a href="#accelerators">Ajnabi</a>
-        <a href="#accelerators">ConsultDirect</a>
       </div>
       <div class="ft-col">
         <h5>Services</h5>
@@ -518,11 +524,13 @@
       </div>
     </div>
     <div class="ft-bottom">
-      <span>&copy; 2026 Tenqiva. All rights reserved. | India · Global Delivery</span>
+      <span>&copy; 2026 {{COMPANY_NAME}}. All rights reserved. | India · Global Delivery</span>
       <div class="ft-legal">
+        <a href="pricing.html">Pricing</a>
         <a href="terms.html">Terms &amp; Conditions</a>
         <a href="privacy.html">Privacy Policy</a>
         <a href="refund.html">Refund &amp; Cancellation Policy</a>
+        <a href="shipping.html">Shipping &amp; Delivery Policy</a>
         <a href="#contact">Contact Us</a>
       </div>
     </div>
@@ -533,6 +541,13 @@
     const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('vis')})},{threshold:.12});
     document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
     document.querySelectorAll('.nav-links a').forEach(a=>{a.addEventListener('click',()=>{document.getElementById('navLinks').classList.remove('open')})});
+    document.getElementById('contactForm').addEventListener('submit',function(e){
+      e.preventDefault();
+      var v=function(id){return document.getElementById(id).value.trim()};
+      var subject=v('cfSubject')||('Website enquiry from '+(v('cfName')||'visitor'));
+      var body='Name: '+v('cfName')+'\nEmail: '+v('cfEmail')+'\nCompany: '+(v('cfCompany')||'-')+'\n\n'+v('cfMessage');
+      window.location.href='mailto:hello@tenqiva.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+    });
   </script>
 </body>
 </html>
