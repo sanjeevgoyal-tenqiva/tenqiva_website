@@ -3,197 +3,330 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Tenqiva — 13 Industry Accelerators | Software Consulting & Solutions</title>
-  <meta name="description" content="Tenqiva builds 13 AI-powered industry accelerators. Speed, Visibility, Control. We don't just consult — we build, ship, and scale." />
-  <meta name="keywords" content="software consulting, SaaS, AI accelerator, data intelligence, Power BI, India, enterprise solutions" />
+  <title>Tenqiva — Software Solutions &amp; Managed Corporate Experiences</title>
+  <meta name="description" content="Tenqiva runs two divisions: AI-powered SaaS accelerators for industry, and fully managed corporate decoration, events, dining and workplace services across India." />
+  <meta name="keywords" content="software consulting, SaaS, AI accelerator, corporate event management, office Christmas decoration, corporate catering, facility management, Hyderabad, India" />
   <meta name="author" content="Tenqiva" />
-  <meta property="og:title" content="Tenqiva — 13 Industry Accelerators" />
-  <meta property="og:description" content="AI-powered SaaS products designed for Speed, Visibility, and Control." />
+  <meta property="og:title" content="Tenqiva — Software Solutions &amp; Managed Corporate Experiences" />
+  <meta property="og:description" content="Software that ships. Experiences that land. Two divisions, one standard." />
   <meta property="og:type" content="website" />
   <meta property="og:url" content="https://tenqiva.com" />
   <link rel="preconnect" href="https://fonts.googleapis.com" />
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,400;1,6..72,400&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,600;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,300;0,6..72,400;1,6..72,400&display=swap" rel="stylesheet" />
   <style>
-    :root {
-      --bg: #08090d;
-      --bg2: #0e1017;
-      --bg-card: #13151e;
-      --bg-card-h: #1a1d2a;
-      --text: #e4e2dd;
-      --text-m: #7d7f8c;
-      --accent: #d4f034;
-      --accent-d: rgba(212,240,52,0.1);
-      --accent2: #34b4f0;
-      --accent3: #f07434;
-      --border: rgba(255,255,255,0.06);
-      --r: 14px;
-      --font: 'Bricolage Grotesque', sans-serif;
-      --serif: 'Newsreader', serif;
+    :root{
+      --bg:#07080b; --bg2:#0b0d13; --bg-card:#111320; --bg-card-h:#171a2a;
+      --text:#eceae5; --text-m:#8a8c99; --text-d:#5d5f6b;
+      --accent:#d4f034; --accent2:#34b4f0; --accent3:#ff8a4c;
+      --xmas:#e8503a; --gold:#e8b24a;
+      --border:rgba(255,255,255,.07); --border-s:rgba(255,255,255,.13);
+      --r:16px; --font:'Bricolage Grotesque',sans-serif; --serif:'Newsreader',serif;
+      --ease:cubic-bezier(.22,1,.36,1);
     }
     *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
-    html{scroll-behavior:smooth}
+    html{scroll-behavior:smooth;scroll-padding-top:90px}
     body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.6;overflow-x:hidden;-webkit-font-smoothing:antialiased}
-    body::before{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.8' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.03'/%3E%3C/svg%3E");pointer-events:none;z-index:9999}
+    body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:9999}
     a{color:inherit;text-decoration:none}
+    ::selection{background:var(--accent);color:var(--bg)}
 
-    /* ── NAV ── */
-    nav{position:fixed;top:0;width:100%;z-index:100;padding:18px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(8,9,13,0.75);backdrop-filter:blur(20px);border-bottom:1px solid var(--border)}
-    .logo{font-size:1.65rem;font-weight:700;letter-spacing:-0.03em}.logo span{color:var(--accent)}
-    .nav-links{display:flex;gap:28px;align-items:center}
-    .nav-links a{color:var(--text-m);font-size:.85rem;font-weight:500;transition:color .3s}
-    .nav-links a:hover{color:var(--text)}
-    .nav-cta{background:var(--accent)!important;color:var(--bg)!important;padding:10px 24px;border-radius:100px;font-weight:700!important;transition:transform .2s,box-shadow .3s!important}
-    .nav-cta:hover{transform:translateY(-1px);box-shadow:0 4px 20px rgba(212,240,52,.3)}
-    .ham{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:4px}
+    /* ───── FESTIVE BAR ───── */
+    .xbar{position:fixed;top:0;left:0;right:0;z-index:130;background:linear-gradient(90deg,#b8372a,var(--xmas) 38%,#d4913a 78%,var(--gold));color:#fff;font-size:.8rem;font-weight:600;padding:10px 54px 10px 40px;display:none;align-items:center;justify-content:center;gap:12px;letter-spacing:.01em}
+    body.bar .xbar{display:flex}
+    .xbar em{font-family:var(--serif);font-style:italic;font-weight:400;opacity:.92}
+    .xbar a{text-decoration:underline;text-underline-offset:3px;font-weight:700;white-space:nowrap}
+    .xbar .x{position:absolute;right:14px;top:50%;transform:translateY(-50%);background:none;border:none;color:rgba(255,255,255,.7);font-size:1.15rem;cursor:pointer;line-height:1;padding:2px 6px;border-radius:4px}
+    .xbar .x:hover{color:#fff;background:rgba(0,0,0,.15)}
+
+    /* ───── NAV ───── */
+    nav{position:fixed;top:0;left:0;right:0;z-index:120;padding:16px 40px;display:flex;justify-content:space-between;align-items:center;background:rgba(7,8,11,.72);backdrop-filter:blur(22px) saturate(140%);border-bottom:1px solid transparent;transition:border-color .4s,background .4s,padding .4s}
+    body.bar nav{top:var(--barh,39px)}
+    nav.stuck{border-bottom-color:var(--border);padding:11px 40px}
+    .logo{font-size:1.6rem;font-weight:700;letter-spacing:-.035em;display:flex;align-items:center}
+    .logo span{color:var(--accent)}
+    .nav-links{display:flex;gap:4px;align-items:center}
+    .nav-links a{color:var(--text-m);font-size:.86rem;font-weight:500;padding:8px 14px;border-radius:100px;transition:color .3s,background .3s}
+    .nav-links a:hover{color:var(--text);background:rgba(255,255,255,.045)}
+    .nav-links .dot-s,.nav-links .dot-e{width:6px;height:6px;border-radius:50%;display:inline-block;margin-right:7px;vertical-align:1px}
+    .dot-s{background:var(--accent)} .dot-e{background:var(--accent3)}
+    .nav-cta{background:var(--text)!important;color:var(--bg)!important;padding:10px 22px!important;font-weight:700!important;margin-left:8px;transition:transform .25s var(--ease),box-shadow .35s!important}
+    .nav-cta:hover{transform:translateY(-1px);box-shadow:0 6px 22px rgba(255,255,255,.14)}
+    .ham{display:none;flex-direction:column;gap:5px;cursor:pointer;background:none;border:none;padding:6px}
     .ham span{width:22px;height:2px;background:var(--text);border-radius:2px;transition:.3s}
 
-    /* ── HERO ── */
-    .hero{min-height:100vh;display:flex;flex-direction:column;justify-content:center;align-items:center;text-align:center;padding:140px 40px 80px;position:relative}
-    .hero::before{content:'';position:absolute;top:-10%;left:50%;transform:translateX(-50%);width:900px;height:900px;background:radial-gradient(circle,rgba(212,240,52,.05) 0%,rgba(52,180,240,.03) 40%,transparent 65%);pointer-events:none}
-    .hero-pill{display:inline-flex;align-items:center;gap:10px;padding:8px 22px;border:1px solid var(--border);border-radius:100px;font-size:.8rem;color:var(--text-m);background:var(--bg-card);margin-bottom:36px;animation:fu .8s ease both}
-    .hero-pill .dot{width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulse 2s infinite}
-    .hero h1{font-size:clamp(2.8rem,6.5vw,5.2rem);font-weight:800;line-height:1.05;letter-spacing:-0.04em;max-width:950px;animation:fu .8s .12s ease both}
-    .hero h1 em{font-family:var(--serif);font-style:italic;color:var(--accent);font-weight:400}
-    .hero-sub{max-width:600px;color:var(--text-m);font-size:1.1rem;margin-top:28px;line-height:1.75;animation:fu .8s .25s ease both}
-    .hero-tags{display:flex;gap:32px;margin-top:40px;animation:fu .8s .35s ease both}
-    .hero-tag{font-size:1rem;font-weight:700;letter-spacing:.12em;text-transform:uppercase}
-    .hero-tag:nth-child(1){color:var(--accent)}
-    .hero-tag:nth-child(2){color:var(--accent2)}
-    .hero-tag:nth-child(3){color:var(--accent3)}
-    .tag-dot{color:var(--text-m);margin:0 -8px;opacity:.3}
-    .hero-actions{display:flex;gap:16px;margin-top:44px;animation:fu .8s .45s ease both}
-    .btn-p{background:var(--accent);color:var(--bg);padding:15px 38px;border-radius:100px;font-weight:700;font-size:.95rem;transition:transform .2s,box-shadow .3s;border:none;cursor:pointer;display:inline-block}
-    .btn-p:hover{transform:translateY(-2px);box-shadow:0 6px 28px rgba(212,240,52,.3)}
-    .btn-o{background:transparent;color:var(--text);padding:15px 38px;border-radius:100px;font-weight:600;font-size:.95rem;border:1px solid rgba(255,255,255,.13);transition:border-color .3s,background .3s;cursor:pointer;display:inline-block}
-    .btn-o:hover{border-color:rgba(255,255,255,.3);background:rgba(255,255,255,.03)}
+    /* ───── BUTTONS ───── */
+    .btn-p,.btn-o,.btn-w{display:inline-flex;align-items:center;gap:9px;padding:15px 34px;border-radius:100px;font-weight:700;font-size:.93rem;cursor:pointer;border:none;transition:transform .25s var(--ease),box-shadow .4s,background .3s,border-color .3s}
+    .btn-p{background:var(--accent);color:var(--bg)}
+    .btn-p:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(212,240,52,.26)}
+    .btn-o{background:transparent;color:var(--text);border:1px solid var(--border-s);font-weight:600}
+    .btn-o:hover{transform:translateY(-2px);border-color:rgba(255,255,255,.32);background:rgba(255,255,255,.035)}
+    .btn-w{background:var(--accent3);color:#1a0d04}
+    .btn-w:hover{transform:translateY(-2px);box-shadow:0 10px 32px rgba(255,138,76,.28)}
+    .arr{transition:transform .3s var(--ease)}
+    .btn-p:hover .arr,.btn-w:hover .arr,.btn-o:hover .arr{transform:translateX(4px)}
 
-    /* ── NAME MEANING ── */
-    .meaning{display:flex;justify-content:center;gap:0;padding:56px 40px;border-top:1px solid var(--border);border-bottom:1px solid var(--border)}
-    .meaning-block{text-align:center;padding:0 48px;border-right:1px solid var(--border)}
-    .meaning-block:last-child{border-right:none}
-    .meaning-word{font-size:2.2rem;font-weight:800;line-height:1}
-    .meaning-word.c1{color:var(--accent)}
-    .meaning-word.c2{color:var(--accent2)}
-    .meaning-word.c3{color:var(--accent3)}
-    .meaning-def{font-size:.82rem;color:var(--text-m);margin-top:6px;text-transform:uppercase;letter-spacing:.08em}
+    /* ───── HERO ───── */
+    .hero{position:relative;min-height:100svh;display:flex;flex-direction:column;justify-content:center;padding:160px 40px 60px;overflow:hidden}
+    .aurora{position:absolute;inset:0;pointer-events:none;overflow:hidden}
+    .blob{position:absolute;border-radius:50%;filter:blur(90px);opacity:.5;will-change:transform}
+    .b1{width:620px;height:620px;background:radial-gradient(circle,rgba(212,240,52,.30),transparent 68%);top:-16%;left:4%;animation:drift1 22s ease-in-out infinite}
+    .b2{width:560px;height:560px;background:radial-gradient(circle,rgba(52,180,240,.26),transparent 68%);top:4%;right:2%;animation:drift2 27s ease-in-out infinite}
+    .b3{width:520px;height:520px;background:radial-gradient(circle,rgba(255,138,76,.24),transparent 68%);bottom:-18%;left:38%;animation:drift3 31s ease-in-out infinite}
+    @keyframes drift1{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(90px,70px) scale(1.14)}}
+    @keyframes drift2{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(-100px,60px) scale(1.1)}}
+    @keyframes drift3{0%,100%{transform:translate(0,0) scale(1)}50%{transform:translate(70px,-70px) scale(1.16)}}
+    .grid-fade{position:absolute;inset:0;background-image:linear-gradient(rgba(255,255,255,.028) 1px,transparent 1px),linear-gradient(90deg,rgba(255,255,255,.028) 1px,transparent 1px);background-size:76px 76px;mask-image:radial-gradient(ellipse 85% 62% at 50% 42%,#000 25%,transparent 78%);-webkit-mask-image:radial-gradient(ellipse 85% 62% at 50% 42%,#000 25%,transparent 78%);pointer-events:none}
+    .hero-in{position:relative;z-index:2;max-width:1220px;margin:0 auto;width:100%}
+    .pill{display:inline-flex;align-items:center;gap:10px;padding:8px 20px;border:1px solid var(--border);border-radius:100px;font-size:.78rem;color:var(--text-m);background:rgba(17,19,32,.7);backdrop-filter:blur(8px);animation:fu .8s ease both}
+    .pill .live{width:7px;height:7px;background:var(--accent);border-radius:50%;animation:pulse 2.2s infinite}
+    h1.mega{font-size:clamp(2.7rem,7vw,6rem);font-weight:800;line-height:1.02;letter-spacing:-.045em;margin-top:30px;max-width:1040px}
+    h1.mega .ln{display:block;overflow:hidden}
+    h1.mega .ln > span{display:block;animation:rise 1s var(--ease) both}
+    h1.mega .ln:nth-child(1) > span{animation-delay:.1s}
+    h1.mega .ln:nth-child(2) > span{animation-delay:.22s}
+    h1.mega em{font-family:var(--serif);font-style:italic;font-weight:300}
+    .em-a{color:var(--accent)} .em-b{color:var(--accent3)}
+    @keyframes rise{from{transform:translateY(105%)}to{transform:translateY(0)}}
+    .hero-sub{color:var(--text-m);font-size:clamp(1rem,1.35vw,1.14rem);margin-top:28px;max-width:600px;line-height:1.72;animation:fu .9s .5s ease both}
+    .hero-sub strong{color:var(--text);font-weight:600}
 
-    /* ── SECTIONS ── */
-    section{padding:100px 40px}
-    .container{max-width:1200px;margin:0 auto}
-    .s-label{font-size:.75rem;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:700;margin-bottom:14px}
-    .s-title{font-size:clamp(1.9rem,3.8vw,3rem);font-weight:800;line-height:1.12;max-width:680px;letter-spacing:-0.03em}
-    .s-desc{color:var(--text-m);max-width:520px;margin-top:18px;font-size:1rem;line-height:1.7}
+    /* ───── SPLIT CARDS ───── */
+    .split{display:grid;grid-template-columns:1fr 1fr;gap:16px;max-width:1220px;margin:64px auto 0;width:100%;position:relative;z-index:2;animation:fu 1s .7s ease both}
+    .sc{position:relative;border:1px solid var(--border);border-radius:20px;padding:38px 36px 34px;background:linear-gradient(165deg,rgba(255,255,255,.045),rgba(255,255,255,.012));overflow:hidden;transition:border-color .45s,transform .45s var(--ease)}
+    .sc::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .45s;background:radial-gradient(520px circle at var(--mx,50%) var(--my,50%),var(--glow),transparent 62%);pointer-events:none}
+    .sc:hover::before{opacity:1}
+    .sc:hover{transform:translateY(-6px)}
+    .sc-a{--glow:rgba(212,240,52,.12)} .sc-a:hover{border-color:rgba(212,240,52,.34)}
+    .sc-b{--glow:rgba(255,138,76,.13)} .sc-b:hover{border-color:rgba(255,138,76,.36)}
+    .sc-top{display:flex;align-items:center;justify-content:space-between;gap:16px;position:relative}
+    .sc-kick{font-size:.68rem;text-transform:uppercase;letter-spacing:.2em;font-weight:700;display:flex;align-items:center;gap:9px}
+    .sc-a .sc-kick{color:var(--accent)} .sc-b .sc-kick{color:var(--accent3)}
+    .sc-kick i{width:7px;height:7px;border-radius:50%;background:currentColor;display:block}
+    .sc-no{font-family:var(--serif);font-style:italic;font-size:2.4rem;line-height:1;opacity:.17}
+    .sc h2{font-size:clamp(1.55rem,2.5vw,2.05rem);font-weight:800;letter-spacing:-.03em;line-height:1.13;margin-top:22px;position:relative}
+    .sc > p{color:var(--text-m);font-size:.93rem;line-height:1.68;margin-top:14px;position:relative;min-height:3.4em}
+    .chips{display:flex;flex-wrap:wrap;gap:7px;margin-top:24px;position:relative}
+    .chip{font-size:.75rem;padding:6px 13px;border-radius:100px;border:1px solid var(--border);background:rgba(0,0,0,.25);color:var(--text-m);transition:border-color .3s,color .3s}
+    .sc-a:hover .chip{border-color:rgba(212,240,52,.2);color:#c9ccba}
+    .sc-b:hover .chip{border-color:rgba(255,138,76,.22);color:#d4c0b2}
+    .sc-cta{display:inline-flex;align-items:center;gap:8px;margin-top:30px;font-weight:700;font-size:.89rem;padding:12px 26px;border-radius:100px;position:relative;transition:transform .25s var(--ease),box-shadow .35s}
+    .sc-a .sc-cta{background:var(--accent);color:var(--bg)}
+    .sc-b .sc-cta{background:var(--accent3);color:#1a0d04}
+    .sc-cta:hover{transform:translateY(-2px)}
+    .sc-a .sc-cta:hover{box-shadow:0 8px 26px rgba(212,240,52,.3)}
+    .sc-b .sc-cta:hover{box-shadow:0 8px 26px rgba(255,138,76,.3)}
 
-    /* ── ACCELERATORS GRID ── */
-    .acc-grid{display:grid;grid-template-columns:repeat(5,1fr);gap:16px;margin-top:56px}
-    .acc-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:32px 24px;transition:border-color .4s,background .4s,transform .3s;position:relative;overflow:hidden}
-    .acc-card:hover{border-color:rgba(212,240,52,.18);background:var(--bg-card-h);transform:translateY(-4px)}
-    .acc-card::after{content:'';position:absolute;top:0;left:0;right:0;height:2px;background:linear-gradient(90deg,var(--accent),var(--accent2));opacity:0;transition:opacity .4s}
-    .acc-card:hover::after{opacity:1}
-    .acc-num{font-size:2rem;font-weight:800;color:var(--accent);opacity:.3;line-height:1}
-    .acc-icon{font-size:1.5rem;margin:16px 0 12px}
-    .acc-card h3{font-size:.95rem;font-weight:700;margin-bottom:6px}
-    .acc-card p{color:var(--text-m);font-size:.8rem;line-height:1.55}
-    .acc-industry{margin-top:12px;font-size:.7rem;color:var(--accent2);text-transform:uppercase;letter-spacing:.06em;font-weight:600}
-    .acc-card.empty{border-style:dashed;opacity:.5}
-    .acc-card.empty:hover{opacity:.7}
+    /* ───── MARQUEE ───── */
+    .mq{border-top:1px solid var(--border);border-bottom:1px solid var(--border);padding:20px 0;overflow:hidden;background:var(--bg2);mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent);-webkit-mask-image:linear-gradient(90deg,transparent,#000 9%,#000 91%,transparent)}
+    .mq-track{display:flex;gap:46px;width:max-content;animation:scroll 46s linear infinite}
+    .mq:hover .mq-track{animation-play-state:paused}
+    .mq-item{display:flex;align-items:center;gap:46px;font-size:.92rem;color:var(--text-d);white-space:nowrap;font-weight:500;letter-spacing:.01em}
+    .mq-item::after{content:'';width:5px;height:5px;border-radius:50%;background:var(--accent3);opacity:.5}
+    @keyframes scroll{to{transform:translateX(-50%)}}
 
-    /* ── SERVICES ── */
-    .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-top:56px}
-    .svc-card{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:36px 28px;transition:border-color .4s,transform .3s}
-    .svc-card:hover{border-color:rgba(212,240,52,.15);transform:translateY(-3px)}
-    .svc-card h3{font-size:1.05rem;font-weight:700;margin-bottom:10px}
-    .svc-card p{color:var(--text-m);font-size:.88rem;line-height:1.6}
-    .svc-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:16px}
-    .svc-tag{padding:3px 10px;border-radius:100px;font-size:.72rem;background:rgba(255,255,255,.03);color:var(--text-m);border:1px solid var(--border)}
+    /* ───── SECTIONS ───── */
+    section{padding:112px 40px;position:relative}
+    .container{max-width:1220px;margin:0 auto}
+    .dhead{display:flex;align-items:center;gap:16px;flex-wrap:wrap;margin-bottom:22px}
+    .badge{font-size:.67rem;text-transform:uppercase;letter-spacing:.17em;font-weight:700;padding:7px 15px;border-radius:100px;border:1px solid}
+    .bg-s{color:var(--accent);border-color:rgba(212,240,52,.3);background:rgba(212,240,52,.06)}
+    .bg-e{color:var(--accent3);border-color:rgba(255,138,76,.3);background:rgba(255,138,76,.06)}
+    .dline{height:1px;flex:1;min-width:40px;background:linear-gradient(90deg,var(--border),transparent)}
+    .s-title{font-size:clamp(1.95rem,4vw,3.15rem);font-weight:800;line-height:1.1;max-width:760px;letter-spacing:-.035em}
+    .s-title em{font-family:var(--serif);font-style:italic;font-weight:300}
+    .s-desc{color:var(--text-m);max-width:560px;margin-top:20px;font-size:1rem;line-height:1.72}
 
-    /* ── WHY ── */
-    .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:16px;margin-top:56px}
-    .why-card{text-align:center;padding:36px 20px;border:1px solid var(--border);border-radius:var(--r);background:var(--bg-card);transition:transform .3s}
-    .why-card:hover{transform:translateY(-3px)}
-    .why-num{font-family:var(--serif);font-size:2.4rem;color:var(--accent);line-height:1;font-style:italic}
-    .why-card h4{margin-top:14px;font-size:.95rem;font-weight:700}
-    .why-card p{color:var(--text-m);font-size:.82rem;margin-top:6px;line-height:1.55}
+    /* ───── ACCELERATORS ───── */
+    .acc-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:54px}
+    .acc{position:relative;background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:28px 22px;overflow:hidden;transition:border-color .4s,background .4s,transform .35s var(--ease)}
+    .acc::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .4s;background:radial-gradient(340px circle at var(--mx,50%) var(--my,50%),rgba(212,240,52,.09),transparent 60%);pointer-events:none}
+    .acc:hover::before{opacity:1}
+    .acc:hover{border-color:rgba(212,240,52,.22);background:var(--bg-card-h);transform:translateY(-5px)}
+    .acc-n{font-family:var(--serif);font-style:italic;font-size:1.6rem;color:var(--accent);opacity:.4;line-height:1}
+    .acc-i{font-size:1.4rem;margin:14px 0 11px}
+    .acc h3{font-size:.94rem;font-weight:700;margin-bottom:6px;position:relative}
+    .acc p{color:var(--text-m);font-size:.79rem;line-height:1.55;position:relative}
+    .acc-tag{margin-top:12px;font-size:.68rem;color:var(--accent2);text-transform:uppercase;letter-spacing:.07em;font-weight:600;position:relative}
+    .acc.soon{border-style:dashed;opacity:.45}
+    .acc.soon:hover{opacity:.72}
 
-    /* ── TECH ── */
-    .tech-strip{display:flex;flex-wrap:wrap;gap:10px;margin-top:36px;justify-content:center}
-    .tech-pill{padding:9px 20px;border:1px solid var(--border);border-radius:100px;font-size:.82rem;color:var(--text-m);background:var(--bg-card);transition:border-color .3s,color .3s}
-    .tech-pill:hover{border-color:rgba(212,240,52,.25);color:var(--text)}
+    /* ───── SOFTWARE SERVICES ───── */
+    .svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px;margin-top:40px}
+    .svc{background:var(--bg-card);border:1px solid var(--border);border-radius:var(--r);padding:32px 26px;transition:border-color .4s,transform .35s var(--ease)}
+    .svc:hover{border-color:rgba(212,240,52,.18);transform:translateY(-4px)}
+    .svc h3{font-size:1.02rem;font-weight:700;margin-bottom:9px}
+    .svc p{color:var(--text-m);font-size:.86rem;line-height:1.62}
+    .svc-tags{display:flex;flex-wrap:wrap;gap:6px;margin-top:15px}
+    .svc-tag{padding:4px 11px;border-radius:100px;font-size:.71rem;background:rgba(255,255,255,.03);color:var(--text-d);border:1px solid var(--border)}
 
-    /* ── CONTACT ── */
-    .contact-grid{display:grid;grid-template-columns:1fr 1fr;gap:40px;margin-top:56px}
-    .contact-info h3{font-size:1.3rem;font-weight:700;margin-bottom:20px}
-    .contact-item{margin-bottom:20px}
-    .contact-item .label{font-size:.75rem;text-transform:uppercase;letter-spacing:.1em;color:var(--accent);font-weight:600;margin-bottom:4px}
-    .contact-item .value{font-size:.95rem;color:var(--text);line-height:1.6}
-    .contact-item .value a{color:var(--accent2);text-decoration:underline}
-    .contact-form input,.contact-form textarea{width:100%;padding:14px 18px;background:var(--bg-card);border:1px solid var(--border);border-radius:10px;color:var(--text);font-family:var(--font);font-size:.9rem;margin-bottom:14px;outline:none;transition:border-color .3s}
-    .contact-form input:focus,.contact-form textarea:focus{border-color:var(--accent)}
-    .contact-form textarea{height:120px;resize:vertical}
+    /* ───── EXPERIENCES ───── */
+    #experiences{background:radial-gradient(1200px 600px at 12% 8%,rgba(255,138,76,.07),transparent 58%),radial-gradient(1000px 520px at 88% 88%,rgba(232,178,74,.05),transparent 58%),#090709}
+    .pillar{margin-top:46px}
+    .p-label{font-size:.73rem;text-transform:uppercase;letter-spacing:.15em;color:var(--accent3);font-weight:700;display:flex;align-items:center;gap:14px;margin-bottom:18px}
+    .p-label::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,rgba(255,138,76,.22),transparent)}
+    .exp-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .exp{position:relative;background:#121015;border:1px solid var(--border);border-radius:var(--r);padding:26px 22px;overflow:hidden;transition:border-color .4s,background .4s,transform .35s var(--ease)}
+    .exp::before{content:'';position:absolute;inset:0;opacity:0;transition:opacity .4s;background:radial-gradient(320px circle at var(--mx,50%) var(--my,50%),rgba(255,138,76,.1),transparent 60%);pointer-events:none}
+    .exp:hover::before{opacity:1}
+    .exp:hover{border-color:rgba(255,138,76,.26);background:#191318;transform:translateY(-5px)}
+    .exp-i{font-size:1.4rem;margin-bottom:12px}
+    .exp h4{font-size:.94rem;font-weight:700;margin-bottom:7px;position:relative}
+    .exp p{color:var(--text-m);font-size:.8rem;line-height:1.58;position:relative}
 
-    /* ── CTA ── */
-    .cta{text-align:center;padding:120px 40px}
-    .cta h2{font-size:clamp(2rem,4.5vw,3.5rem);font-weight:800;line-height:1.1;letter-spacing:-0.03em}
-    .cta h2 em{font-family:var(--serif);color:var(--accent);font-style:italic;font-weight:400}
-    .cta p{color:var(--text-m);max-width:460px;margin:22px auto 0;font-size:1.02rem}
-    .cta-actions{margin-top:36px}
+    /* ───── CHRISTMAS ───── */
+    .xmas{position:relative;border:1px solid rgba(232,80,58,.24);border-radius:22px;padding:54px 50px;margin-top:40px;overflow:hidden;background:radial-gradient(1100px 440px at 16% 0%,rgba(232,80,58,.17),transparent 62%),radial-gradient(820px 400px at 90% 100%,rgba(232,178,74,.13),transparent 60%),#130c0b}
+    .xmas .stars{position:absolute;inset:0;pointer-events:none;background-image:radial-gradient(2px 2px at 11% 21%,rgba(255,255,255,.55),transparent),radial-gradient(1.6px 1.6px at 31% 67%,rgba(255,255,255,.35),transparent),radial-gradient(2px 2px at 54% 15%,rgba(255,255,255,.45),transparent),radial-gradient(1.6px 1.6px at 73% 54%,rgba(255,255,255,.3),transparent),radial-gradient(2px 2px at 88% 26%,rgba(255,255,255,.42),transparent),radial-gradient(1.5px 1.5px at 42% 88%,rgba(255,255,255,.3),transparent);animation:twinkle 4.4s ease-in-out infinite}
+    .xmas-in{position:relative;display:grid;grid-template-columns:1.04fr .96fr;gap:54px;align-items:start}
+    .xtag{display:inline-flex;align-items:center;gap:9px;font-size:.71rem;text-transform:uppercase;letter-spacing:.15em;font-weight:700;color:var(--gold);border:1px solid rgba(232,178,74,.33);background:rgba(232,178,74,.08);padding:7px 16px;border-radius:100px}
+    .xmas h3{font-size:clamp(1.85rem,3.4vw,2.75rem);font-weight:800;line-height:1.08;letter-spacing:-.035em;margin-top:22px}
+    .xmas h3 em{font-family:var(--serif);font-style:italic;color:var(--xmas);font-weight:300}
+    .xcopy{color:#b5a8a3;font-size:.96rem;line-height:1.74;margin-top:18px}
+    .xpts{list-style:none;margin:26px 0 0;padding:0;display:grid;gap:11px}
+    .xpts li{font-size:.88rem;color:var(--text);padding-left:25px;position:relative;line-height:1.5}
+    .xpts li::before{content:'✦';position:absolute;left:0;top:-1px;color:var(--gold)}
+    .xurg{margin-top:28px;font-size:.85rem;color:var(--gold);border-left:2px solid var(--gold);padding-left:15px;line-height:1.58}
+    .pkg{display:grid;gap:11px}
+    .pk{border:1px solid rgba(255,255,255,.08);border-radius:14px;padding:19px 21px;background:rgba(255,255,255,.022);transition:border-color .35s,background .35s,transform .3s var(--ease)}
+    .pk:hover{border-color:rgba(232,178,74,.42);background:rgba(232,178,74,.055);transform:translateX(5px)}
+    .pk.feat{border-color:rgba(232,80,58,.44);background:rgba(232,80,58,.07)}
+    .pk-top{display:flex;justify-content:space-between;align-items:baseline;gap:12px}
+    .pk-top h5{font-size:.98rem;font-weight:700}
+    .pk-sc{font-size:.7rem;color:var(--gold);text-transform:uppercase;letter-spacing:.08em;font-weight:600;white-space:nowrap}
+    .pk p{color:var(--text-m);font-size:.81rem;margin-top:7px;line-height:1.55}
+    .pk-note{font-size:.77rem;color:var(--text-d);margin-top:4px;text-align:center;line-height:1.5}
 
-    /* ── FOOTER ── */
-    footer{border-top:1px solid var(--border);padding:56px 40px 32px}
-    .ft-inner{max-width:1200px;margin:0 auto;display:grid;grid-template-columns:2.5fr 1fr 1fr 1fr;gap:40px}
-    .ft-brand .logo{font-size:1.4rem}
-    .ft-brand p{color:var(--text-m);font-size:.84rem;margin-top:14px;max-width:300px;line-height:1.65}
-    .ft-col h5{font-size:.72rem;text-transform:uppercase;letter-spacing:.12em;color:var(--text-m);margin-bottom:16px}
-    .ft-col a{display:block;color:var(--text);font-size:.86rem;margin-bottom:10px;transition:color .3s}
+    /* ───── STEPS ───── */
+    .steps{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:44px;counter-reset:s}
+    .step{border:1px solid var(--border);border-radius:var(--r);padding:28px 22px;background:#121015;transition:border-color .4s,transform .35s var(--ease)}
+    .step:hover{border-color:rgba(255,138,76,.24);transform:translateY(-4px)}
+    .step::before{counter-increment:s;content:'0' counter(s);font-family:var(--serif);font-style:italic;font-size:1.85rem;color:var(--accent3);opacity:.45;line-height:1;display:block}
+    .step h4{font-size:.94rem;font-weight:700;margin-top:12px}
+    .step p{color:var(--text-m);font-size:.81rem;margin-top:7px;line-height:1.56}
+
+    /* ───── STATS ───── */
+    .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:1px;background:var(--border);border:1px solid var(--border);border-radius:var(--r);overflow:hidden;margin-top:18px}
+    .stat{background:var(--bg);padding:38px 26px;text-align:center;transition:background .4s}
+    .stat:hover{background:var(--bg-card)}
+    .stat .n{font-size:clamp(2.1rem,4vw,3rem);font-weight:800;letter-spacing:-.04em;line-height:1;background:linear-gradient(135deg,var(--accent),var(--accent3));-webkit-background-clip:text;background-clip:text;-webkit-text-fill-color:transparent}
+    .stat .l{color:var(--text-m);font-size:.81rem;margin-top:10px;letter-spacing:.02em}
+
+    /* ───── WHY ───── */
+    .why-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:14px;margin-top:50px}
+    .why{text-align:center;padding:36px 22px;border:1px solid var(--border);border-radius:var(--r);background:var(--bg-card);transition:transform .35s var(--ease),border-color .4s}
+    .why:hover{transform:translateY(-4px);border-color:var(--border-s)}
+    .why-n{font-family:var(--serif);font-size:2.3rem;color:var(--accent);line-height:1;font-style:italic;font-weight:300}
+    .why h4{margin-top:14px;font-size:.94rem;font-weight:700}
+    .why p{color:var(--text-m);font-size:.81rem;margin-top:7px;line-height:1.56}
+
+    /* ───── CONTACT ───── */
+    .c-grid{display:grid;grid-template-columns:1fr 1.05fr;gap:52px;margin-top:52px}
+    .c-item{margin-bottom:22px}
+    .c-item .lb{font-size:.7rem;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:5px}
+    .c-item .vl{font-size:.94rem;color:var(--text);line-height:1.6}
+    .c-item .vl a{color:var(--accent2);text-decoration:underline;text-underline-offset:2px}
+    .form{background:var(--bg-card);border:1px solid var(--border);border-radius:20px;padding:34px 30px}
+    .seg{display:flex;gap:8px;margin-bottom:18px}
+    .seg label{flex:1;position:relative;cursor:pointer}
+    .seg input{position:absolute;opacity:0;pointer-events:none}
+    .seg span{display:block;text-align:center;padding:11px 10px;border:1px solid var(--border);border-radius:11px;font-size:.84rem;font-weight:600;color:var(--text-m);transition:all .3s}
+    .seg input:checked + span{color:var(--bg);background:var(--accent);border-color:var(--accent)}
+    .seg label:last-child input:checked + span{background:var(--accent3);color:#1a0d04;border-color:var(--accent3)}
+    .form input[type=text],.form input[type=email],.form textarea{width:100%;padding:13px 16px;background:rgba(0,0,0,.3);border:1px solid var(--border);border-radius:11px;color:var(--text);font-family:var(--font);font-size:.89rem;margin-bottom:12px;outline:none;transition:border-color .3s,background .3s}
+    .form input:focus,.form textarea:focus{border-color:var(--accent);background:rgba(0,0,0,.45)}
+    .form textarea{height:110px;resize:vertical}
+    .form ::placeholder{color:var(--text-d)}
+    .form .btn-p{width:100%;justify-content:center;margin-top:4px}
+    .f-note{margin-top:13px;font-size:.78rem;color:var(--text-d);line-height:1.55;text-align:center}
+    .f-note a{color:var(--accent)}
+
+    /* ───── CTA ───── */
+    .cta{text-align:center;padding:120px 40px;position:relative;overflow:hidden}
+    .cta::before{content:'';position:absolute;inset:0;background:radial-gradient(760px 320px at 50% 50%,rgba(212,240,52,.07),transparent 66%);pointer-events:none}
+    .cta h2{font-size:clamp(2rem,4.6vw,3.5rem);font-weight:800;line-height:1.08;letter-spacing:-.035em;position:relative}
+    .cta h2 em{font-family:var(--serif);color:var(--accent);font-style:italic;font-weight:300}
+    .cta p{color:var(--text-m);max-width:480px;margin:22px auto 0;font-size:1.01rem;position:relative;line-height:1.7}
+    .cta-act{margin-top:36px;display:flex;gap:14px;justify-content:center;flex-wrap:wrap;position:relative}
+
+    /* ───── FOOTER ───── */
+    footer{border-top:1px solid var(--border);padding:60px 40px 30px;background:var(--bg2)}
+    .ft{max-width:1220px;margin:0 auto;display:grid;grid-template-columns:2.2fr 1fr 1fr 1fr;gap:44px}
+    .ft-b .logo{font-size:1.45rem}
+    .ft-b p{color:var(--text-m);font-size:.85rem;margin-top:14px;max-width:310px;line-height:1.68}
+    .ft-ent{margin-top:16px;font-size:.77rem;color:var(--text-d);line-height:1.6}
+    .ft-col h5{font-size:.69rem;text-transform:uppercase;letter-spacing:.14em;color:var(--text-d);margin-bottom:15px}
+    .ft-col a{display:block;color:var(--text-m);font-size:.85rem;margin-bottom:10px;transition:color .3s}
     .ft-col a:hover{color:var(--accent)}
-    .ft-bottom{max-width:1200px;margin:40px auto 0;padding-top:20px;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:8px;font-size:.78rem;color:var(--text-m)}
-    .ft-legal{display:flex;gap:20px;flex-wrap:wrap}
-    .ft-legal a{color:var(--text-m);transition:color .3s}
-    .ft-legal a:hover{color:var(--accent)}
+    .ft-bot{max-width:1220px;margin:44px auto 0;padding-top:22px;border-top:1px solid var(--border);display:flex;justify-content:space-between;flex-wrap:wrap;gap:10px;font-size:.78rem;color:var(--text-d)}
+    .ft-lg{display:flex;gap:19px;flex-wrap:wrap}
+    .ft-lg a{color:var(--text-d);transition:color .3s}
+    .ft-lg a:hover{color:var(--accent)}
 
-    /* ── ANIMATIONS ── */
+    /* ───── ANIM ───── */
     @keyframes fu{from{opacity:0;transform:translateY(22px)}to{opacity:1;transform:translateY(0)}}
-    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.35}}
-    .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s ease}
-    .reveal.vis{opacity:1;transform:translateY(0)}
+    @keyframes pulse{0%,100%{opacity:1}50%{opacity:.3}}
+    @keyframes twinkle{0%,100%{opacity:.9}50%{opacity:.4}}
+    .rv{opacity:0;transform:translateY(30px);transition:opacity .8s var(--ease),transform .8s var(--ease)}
+    .rv.on{opacity:1;transform:none}
 
-    /* ── RESPONSIVE ── */
-    @media(max-width:1024px){
+    @media(prefers-reduced-motion:reduce){
+      *,*::before,*::after{animation-duration:.01ms!important;animation-iteration-count:1!important;transition-duration:.01ms!important}
+      html{scroll-behavior:auto}
+      .rv{opacity:1;transform:none}
+    }
+
+    /* ───── RESPONSIVE ───── */
+    @media(max-width:1100px){
       .acc-grid{grid-template-columns:repeat(3,1fr)}
+      .steps{grid-template-columns:repeat(2,1fr)}
     }
     @media(max-width:900px){
-      nav{padding:14px 20px}
+      nav{padding:13px 20px} nav.stuck{padding:11px 20px}
       .nav-links{display:none}
-      .nav-links.open{display:flex;flex-direction:column;position:absolute;top:100%;left:0;right:0;background:rgba(8,9,13,.96);backdrop-filter:blur(20px);padding:20px;gap:16px;border-bottom:1px solid var(--border)}
+      .nav-links.open{display:flex;flex-direction:column;align-items:stretch;position:absolute;top:100%;left:0;right:0;background:#07080b;padding:16px;gap:4px;border-bottom:1px solid var(--border);box-shadow:0 18px 40px rgba(0,0,0,.6)}
+      .nav-links.open a{padding:12px 14px}
+      .nav-cta{margin-left:0;text-align:center;justify-content:center}
       .ham{display:flex}
-      section{padding:64px 20px}
-      .hero{padding:110px 20px 50px}
-      .hero-tags{gap:16px;flex-wrap:wrap;justify-content:center}
-      .acc-grid{grid-template-columns:repeat(2,1fr)}
-      .svc-grid{grid-template-columns:1fr}
-      .why-grid{grid-template-columns:repeat(2,1fr)}
-      .meaning{flex-wrap:wrap;gap:24px}.meaning-block{border-right:none;padding:0 24px}
-      .contact-grid{grid-template-columns:1fr}
-      .ft-inner{grid-template-columns:1fr 1fr}
-      .ft-bottom{flex-direction:column}
-      .hero-actions{flex-direction:column;align-items:center}
+      section{padding:72px 20px}
+      .hero{padding:124px 20px 56px;min-height:auto}
+      .split{grid-template-columns:1fr;margin-top:46px}
+      .sc{padding:30px 26px}
+      .sc > p{min-height:0}
+      .acc-grid,.exp-grid,.svc-grid,.why-grid{grid-template-columns:repeat(2,1fr)}
+      .stats{grid-template-columns:repeat(2,1fr)}
+      .xmas{padding:38px 24px}
+      .xmas-in{grid-template-columns:1fr;gap:34px}
+      .c-grid{grid-template-columns:1fr;gap:34px}
+      .ft{grid-template-columns:1fr 1fr}
+      .ft-bot{flex-direction:column}
+      .xbar{padding:9px 40px 9px 14px;font-size:.73rem;gap:7px}
+      .xbar em{display:none}
+      .hero{padding-top:142px}
     }
-    @media(max-width:480px){
-      .acc-grid,.why-grid{grid-template-columns:1fr}
-      .ft-inner{grid-template-columns:1fr}
+    @media(max-width:560px){
+      .acc-grid,.exp-grid,.svc-grid,.why-grid,.steps{grid-template-columns:1fr}
+      .ft{grid-template-columns:1fr}
+      .cta-act{flex-direction:column}
+      .cta-act .btn-p,.cta-act .btn-o{width:100%;justify-content:center}
     }
   </style>
 </head>
 <body>
 
+  <!-- FESTIVE BAR -->
+  <div class="xbar" id="xbar">
+    <span>&#10052;&#65039; <strong>Christmas &amp; New Year decoration</strong> <em>&mdash; December installation slots are filling fast.</em></span>
+    <a href="#christmas">Book a site visit &rarr;</a>
+    <button class="x" id="xclose" aria-label="Dismiss">&times;</button>
+  </div>
+
   <!-- NAV -->
-  <nav>
+  <nav id="nav">
     <a href="/" class="logo">tenqiva<span>.</span></a>
     <div class="nav-links" id="navLinks">
-      <a href="#accelerators">Accelerators</a>
-      <a href="#services">Services</a>
-      <a href="#why">Why Us</a>
+      <a href="#software"><i class="dot-s"></i>Software</a>
+      <a href="#experiences"><i class="dot-e"></i>Experiences</a>
+      <a href="#christmas">Christmas</a>
       <a href="pricing.html">Pricing</a>
       <a href="#contact" class="nav-cta">Get in Touch</a>
     </div>
@@ -201,331 +334,338 @@
   </nav>
 
   <!-- HERO -->
-  <section class="hero">
-    <div class="hero-pill"><span class="dot"></span> 13 Industry Accelerators · Powered by AI</div>
-    <h1>We build software that <em>moves</em> industries forward</h1>
-    <p class="hero-sub">Thirteen AI-powered SaaS products across thirteen industries. Each one designed to give you what matters most.</p>
-    <div class="hero-tags">
-      <span class="hero-tag">Speed</span>
-      <span class="tag-dot">·</span>
-      <span class="hero-tag">Visibility</span>
-      <span class="tag-dot">·</span>
-      <span class="hero-tag">Control</span>
-    </div>
-    <div class="hero-actions">
-      <a href="#contact" class="btn-p">Start a Conversation</a>
-      <a href="#accelerators" class="btn-o">Explore Accelerators</a>
-    </div>
-  </section>
+  <header class="hero">
+    <div class="aurora"><div class="blob b1"></div><div class="blob b2"></div><div class="blob b3"></div></div>
+    <div class="grid-fade"></div>
 
-  <!-- NAME MEANING -->
-  <div class="meaning">
-    <div class="meaning-block">
-      <div class="meaning-word c1">Ten</div>
-      <div class="meaning-def">13 Industry Accelerators</div>
+    <div class="hero-in">
+      <div class="pill"><span class="live"></span> Two divisions &middot; One standard &middot; Hyderabad &amp; pan-India</div>
+      <h1 class="mega">
+        <span class="ln"><span>Software that <em class="em-a">ships</em>.</span></span>
+        <span class="ln"><span>Experiences that <em class="em-b">land</em>.</span></span>
+      </h1>
+      <p class="hero-sub">Tenqiva runs two businesses under one roof. We build <strong>AI-powered SaaS products</strong> for industry &mdash; and we design, staff and run <strong>corporate decoration, events, dining and workplace services</strong> for offices across India.</p>
     </div>
-    <div class="meaning-block">
-      <div class="meaning-word c2">Qi</div>
-      <div class="meaning-def">Intelligence &amp; Quality</div>
+
+    <div class="split">
+      <article class="sc sc-a tilt">
+        <div class="sc-top">
+          <div class="sc-kick"><i></i>Division 01</div>
+          <div class="sc-no">S</div>
+        </div>
+        <h2>Tenqiva Software</h2>
+        <p>Thirteen AI-powered accelerators plus deep consulting across data, cloud and custom builds. We don't just advise &mdash; we build, ship and scale.</p>
+        <div class="chips">
+          <span class="chip">AI &amp; LLM</span><span class="chip">Power BI</span>
+          <span class="chip">SaaS Products</span><span class="chip">Cloud</span><span class="chip">Custom Software</span>
+        </div>
+        <a href="#software" class="sc-cta">Explore Software <span class="arr">&rarr;</span></a>
+      </article>
+
+      <article class="sc sc-b tilt">
+        <div class="sc-top">
+          <div class="sc-kick"><i></i>Division 02</div>
+          <div class="sc-no">E</div>
+        </div>
+        <h2>Tenqiva Experiences</h2>
+        <p>Managed corporate services end to end &mdash; festive and year-round decoration, events, catering, workplace management and employee experience.</p>
+        <div class="chips">
+          <span class="chip">Christmas Decor</span><span class="chip">Corporate Events</span>
+          <span class="chip">Catering</span><span class="chip">Facilities</span><span class="chip">Gifting</span>
+        </div>
+        <a href="#experiences" class="sc-cta">Explore Experiences <span class="arr">&rarr;</span></a>
+      </article>
     </div>
-    <div class="meaning-block">
-      <div class="meaning-word c3">Va</div>
-      <div class="meaning-def">Velocity &amp; Value</div>
+  </header>
+
+  <!-- MARQUEE -->
+  <div class="mq">
+    <div class="mq-track" id="mqTrack">
+      <div class="mq-item">Christmas &amp; Festive Decoration</div>
+      <div class="mq-item">AI Accelerators</div>
+      <div class="mq-item">Annual Days &amp; Award Nights</div>
+      <div class="mq-item">Power BI &amp; Data Intelligence</div>
+      <div class="mq-item">Corporate Catering</div>
+      <div class="mq-item">Custom Software</div>
+      <div class="mq-item">Office Branding</div>
+      <div class="mq-item">Cloud &amp; Infrastructure</div>
+      <div class="mq-item">Facility Management</div>
+      <div class="mq-item">Employee Engagement</div>
+      <div class="mq-item">Festive Gifting</div>
+      <div class="mq-item">Product Launches</div>
     </div>
   </div>
 
-  <!-- ACCELERATORS -->
-  <section id="accelerators">
-    <div class="container reveal">
-      <div class="s-label">Accelerators</div>
-      <div class="s-title">We don't just consult — we build, ship, and scale</div>
-      <div class="s-desc">Each accelerator is a standalone SaaS product solving a real industry problem. Built from experience, not imagination.</div>
-
-      <div class="acc-grid">
-        <div class="acc-card">
-          <div class="acc-num">01</div>
-          <div class="acc-icon">📊</div>
-          <h3>BI Optimizer</h3>
-          <p>AI-powered analysis and optimization of Power BI reports. Finds DAX bottlenecks, M query issues, and auto-suggests fixes.</p>
-          <div class="acc-industry">Data Intelligence</div>
+  <!-- ══════════ DIVISION 01 — SOFTWARE ══════════ -->
+  <section id="software">
+    <div class="container">
+      <div class="rv">
+        <div class="dhead">
+          <span class="badge bg-s">Division 01 &mdash; Software</span>
+          <span class="dline"></span>
         </div>
+        <h2 class="s-title">We don't just consult &mdash; we <em>build, ship and scale</em></h2>
+        <p class="s-desc">Thirteen accelerators, each a standalone SaaS product solving a real industry problem. Built from experience, not imagination.</p>
+      </div>
 
-        <div class="acc-card">
-          <div class="acc-num">02</div>
-          <div class="acc-icon">🚚</div>
-          <h3>MoveIt</h3>
-          <p>End-to-end lead management, order tracking, photo proof delivery, and payment for packers &amp; movers businesses.</p>
-          <div class="acc-industry">Logistics</div>
-        </div>
+      <div class="acc-grid rv">
+        <article class="acc tilt"><div class="acc-n">01</div><div class="acc-i">&#128202;</div><h3>BI Optimizer</h3><p>AI-powered analysis and optimization of Power BI reports. Finds DAX bottlenecks, M query issues, and auto-suggests fixes.</p><div class="acc-tag">Data Intelligence</div></article>
+        <article class="acc tilt"><div class="acc-n">02</div><div class="acc-i">&#128666;</div><h3>MoveIt</h3><p>End-to-end lead management, order tracking, photo proof delivery, and payment for packers &amp; movers businesses.</p><div class="acc-tag">Logistics</div></article>
+        <article class="acc tilt"><div class="acc-n">03</div><div class="acc-i">&#129514;</div><h3>AI Tester</h3><p>Automated software testing using LLM intelligence. Click, validate, capture bugs, generate test cases, and auto-fix.</p><div class="acc-tag">Quality Engineering</div></article>
+        <article class="acc tilt"><div class="acc-n">04</div><div class="acc-i">&#128249;</div><h3>Ajnabi</h3><p>Video call and chat platform with wallet integration, KYC compliance, and coin-based monetization for social connections.</p><div class="acc-tag">Communication</div></article>
+        <article class="acc tilt"><div class="acc-n">05</div><div class="acc-i">&#128188;</div><h3>ConsultDirect</h3><p>Marketplace connecting freelance consultants with businesses. Discovery, booking, payments, and reviews in one platform.</p><div class="acc-tag">Talent</div></article>
+        <article class="acc tilt"><div class="acc-n">06</div><div class="acc-i">&#128141;</div><h3>AI Matchmaker</h3><p>WhatsApp-native matrimonial platform. Biodata parsing, AI compatibility scoring, and broker enablement tools.</p><div class="acc-tag">Matchmaking</div></article>
+        <article class="acc tilt"><div class="acc-n">07</div><div class="acc-i">&#128200;</div><h3>Money Flow Engine</h3><p>Global correlation graph tracking money movement across markets, commodities, geopolitics, and currencies in real time.</p><div class="acc-tag">Finance</div></article>
+        <article class="acc tilt"><div class="acc-n">08</div><div class="acc-i">&#127909;</div><h3>Video Commerce</h3><p>Pay-per-use video and audio call infrastructure. White-label deployable for businesses needing communication services.</p><div class="acc-tag">Communication</div></article>
+        <article class="acc tilt"><div class="acc-n">09</div><div class="acc-i">&#128203;</div><h3>BI Templates</h3><p>Pre-built, optimized Power BI dashboard templates for common enterprise use cases. Plug, customize, and deploy.</p><div class="acc-tag">BI Marketplace</div></article>
+        <article class="acc tilt"><div class="acc-n">10</div><div class="acc-i">&#128142;</div><h3>Jewellery Billing</h3><p>GST-ready billing and inventory for jewellery retailers. Live gold rates, making charges, hallmark tracking, and udhaar khata.</p><div class="acc-tag">Retail &middot; Jewellery</div></article>
+        <article class="acc tilt"><div class="acc-n">11</div><div class="acc-i">&#128241;</div><h3>LeadPro</h3><p>Lead management for transport and logistics. Auto-captures SMS and call enquiries, assigns to agents, and tracks every follow-up to closure.</p><div class="acc-tag">Transport &middot; CRM</div></article>
+        <article class="acc tilt"><div class="acc-n">12</div><div class="acc-i">&#127912;</div><h3>MyPaintShop</h3><p>B2B billing and POS built for paint &amp; plumbing dealers. Multi-rate customer pricing, cloud sync, and a dedicated print station.</p><div class="acc-tag">Retail &middot; B2B Trade</div></article>
+        <article class="acc tilt"><div class="acc-n">13</div><div class="acc-i">&#128737;&#65039;</div><h3>BrandKavach</h3><p>Brand protection and monitoring. Detects counterfeit listings, trademark misuse, and impersonation across marketplaces and social platforms.</p><div class="acc-tag">Brand Protection</div></article>
+        <article class="acc soon"><div class="acc-n">14</div><div class="acc-i">&#128640;</div><h3>Coming Next</h3><p>We're always building the next accelerator. Have an industry problem? Let's talk.</p><div class="acc-tag">Your Industry?</div></article>
+      </div>
 
-        <div class="acc-card">
-          <div class="acc-num">03</div>
-          <div class="acc-icon">🧪</div>
-          <h3>AI Tester</h3>
-          <p>Automated software testing using LLM intelligence. Click, validate, capture bugs, generate test cases, and auto-fix.</p>
-          <div class="acc-industry">Quality Engineering</div>
-        </div>
-
-        <div class="acc-card">
-          <div class="acc-num">04</div>
-          <div class="acc-icon">📹</div>
-          <h3>Ajnabi</h3>
-          <p>Video call and chat platform with wallet integration, KYC compliance, and coin-based monetization for social connections.</p>
-          <div class="acc-industry">Communication</div>
-        </div>
-
-        <div class="acc-card">
-          <div class="acc-num">05</div>
-          <div class="acc-icon">💼</div>
-          <h3>ConsultDirect</h3>
-          <p>Marketplace connecting freelance consultants with businesses. Discovery, booking, payments, and reviews in one platform.</p>
-          <div class="acc-industry">Talent</div>
-        </div>
-
-        <div class="acc-card">
-          <div class="acc-num">06</div>
-          <div class="acc-icon">💍</div>
-          <h3>AI Matchmaker</h3>
-          <p>WhatsApp-native matrimonial platform. Biodata parsing, AI compatibility scoring, and broker enablement tools.</p>
-          <div class="acc-industry">Matchmaking</div>
-        </div>
-
-        <div class="acc-card">
-          <div class="acc-num">07</div>
-          <div class="acc-icon">📈</div>
-          <h3>Money Flow Engine</h3>
-          <p>Global correlation graph tracking money movement across markets, commodities, geopolitics, and currencies in real time.</p>
-          <div class="acc-industry">Finance</div>
-        </div>
-
-        <div class="acc-card">
-          <div class="acc-num">08</div>
-          <div class="acc-icon">🎥</div>
-          <h3>Video Commerce</h3>
-          <p>Pay-per-use video and audio call infrastructure. White-label deployable for businesses needing communication services.</p>
-          <div class="acc-industry">Communication</div>
-        </div>
-
-        <div class="acc-card">
-          <div class="acc-num">09</div>
-          <div class="acc-icon">📋</div>
-          <h3>BI Templates</h3>
-          <p>Pre-built, optimized Power BI dashboard templates for common enterprise use cases. Plug, customize, and deploy.</p>
-          <div class="acc-industry">BI Marketplace</div>
-        </div>
-
-        <div class="acc-card">
-          <div class="acc-num">10</div>
-          <div class="acc-icon">💎</div>
-          <h3>Jewellery Billing</h3>
-          <p>GST-ready billing and inventory for jewellery retailers. Live gold rates, making charges, hallmark tracking, and udhaar khata.</p>
-          <div class="acc-industry">Retail · Jewellery</div>
-        </div>
-
-        <div class="acc-card">
-          <div class="acc-num">11</div>
-          <div class="acc-icon">📱</div>
-          <h3>LeadPro</h3>
-          <p>Lead management for transport and logistics. Auto-captures SMS and call enquiries, assigns to agents, and tracks every follow-up to closure.</p>
-          <div class="acc-industry">Transport · CRM</div>
-        </div>
-
-        <div class="acc-card">
-          <div class="acc-num">12</div>
-          <div class="acc-icon">🎨</div>
-          <h3>MyPaintShop</h3>
-          <p>B2B billing and POS built for paint &amp; plumbing dealers. Multi-rate customer pricing, cloud sync, and a dedicated print station.</p>
-          <div class="acc-industry">Retail · B2B Trade</div>
-        </div>
-
-        <div class="acc-card">
-          <div class="acc-num">13</div>
-          <div class="acc-icon">🛡️</div>
-          <h3>BrandKavach</h3>
-          <p>Brand protection and monitoring. Detects counterfeit listings, trademark misuse, and impersonation across marketplaces and social platforms.</p>
-          <div class="acc-industry">Brand Protection</div>
-        </div>
-
-        <div class="acc-card empty">
-          <div class="acc-num">14</div>
-          <div class="acc-icon">🚀</div>
-          <h3>Coming Next</h3>
-          <p>We're always building the next accelerator. Have an industry problem? Let's talk.</p>
-          <div class="acc-industry">Your Industry?</div>
+      <div class="rv" style="margin-top:72px">
+        <div class="p-label" style="color:var(--accent)">Consulting Services</div>
+        <div class="svc-grid" style="margin-top:0">
+          <article class="svc"><h3>Accelerated AI</h3><p>LLM integration, intelligent classification, prompt engineering, and AI-powered workflows. From concept to production in weeks, not months.</p><div class="svc-tags"><span class="svc-tag">LLM</span><span class="svc-tag">RAG</span><span class="svc-tag">Agents</span></div></article>
+          <article class="svc"><h3>Data &amp; Business Intelligence</h3><p>Power BI architecture, semantic models, DAX optimization and enterprise reporting that executives actually use.</p><div class="svc-tags"><span class="svc-tag">Power BI</span><span class="svc-tag">Fabric</span><span class="svc-tag">DAX</span></div></article>
+          <article class="svc"><h3>Custom Software</h3><p>Full-stack product development &mdash; web, mobile and API. Built to your domain, owned by you, documented end to end.</p><div class="svc-tags"><span class="svc-tag">Web</span><span class="svc-tag">Mobile</span><span class="svc-tag">API</span></div></article>
+          <article class="svc"><h3>Cloud &amp; Infrastructure</h3><p>Architecture, migration, cost optimization and CI/CD across Azure and AWS. Secure, observable and built to scale.</p><div class="svc-tags"><span class="svc-tag">Azure</span><span class="svc-tag">AWS</span><span class="svc-tag">DevOps</span></div></article>
+          <article class="svc"><h3>Product Engineering</h3><p>Discovery, architecture and delivery for teams shipping their first or next product. Dedicated squads, clear milestones.</p><div class="svc-tags"><span class="svc-tag">Discovery</span><span class="svc-tag">Delivery</span></div></article>
+          <article class="svc"><h3>Managed Support</h3><p>Ongoing maintenance, monitoring and enhancement with a defined SLA. Your product stays healthy after launch.</p><div class="svc-tags"><span class="svc-tag">SLA</span><span class="svc-tag">Monitoring</span></div></article>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- SERVICES -->
-  <section id="services" style="background:rgba(255,255,255,.012)">
-    <div class="container reveal">
-      <div class="s-label">Consulting Services</div>
-      <div class="s-title">Accelerated AI consulting for the modern enterprise</div>
-      <div class="s-desc">Deep technical consulting across the full software lifecycle — from architecture to production.</div>
+  <!-- ══════════ DIVISION 02 — EXPERIENCES ══════════ -->
+  <section id="experiences">
+    <div class="container">
+      <div class="rv">
+        <div class="dhead">
+          <span class="badge bg-e">Division 02 &mdash; Experiences</span>
+          <span class="dline"></span>
+        </div>
+        <h2 class="s-title">Everything your office needs &mdash; <em>designed, staffed and run</em></h2>
+        <p class="s-desc">One contract, one accountable team. From the Christmas tree in your lobby to the dinner at your annual day, Tenqiva Experiences manages the whole thing.</p>
+      </div>
 
-      <div class="svc-grid">
-        <div class="svc-card">
-          <h3>🤖 Accelerated AI</h3>
-          <p>LLM integration, intelligent classification, prompt engineering, and AI-powered workflows. We bring AI from concept to production in weeks, not months.</p>
-          <div class="svc-tags"><span class="svc-tag">GPT / Claude</span><span class="svc-tag">LangChain</span><span class="svc-tag">LlamaIndex</span><span class="svc-tag">Fine-tuning</span></div>
+      <!-- CHRISTMAS FEATURE -->
+      <div class="xmas rv" id="christmas">
+        <div class="stars"></div>
+        <div class="xmas-in">
+          <div>
+            <span class="xtag">&#127876; Season 2026 &middot; Now booking</span>
+            <h3>Christmas that makes people <em>stop at the door</em></h3>
+            <p class="xcopy">Our flagship season. We design, fabricate, install and light the whole thing &mdash; lobby trees, facade illumination, reception installations, floor-level decor and the photo moment your people will actually post. Then we strike it all down in January and store it for next year.</p>
+            <ul class="xpts">
+              <li>Concept boards and 3D visuals before anything is built</li>
+              <li>Lobby and reception statement installations</li>
+              <li>Facade and exterior illumination</li>
+              <li>Floor, desk and cafeteria decor at scale</li>
+              <li>Santa visits, carol setups and gifting counters</li>
+              <li>Night and weekend installation &mdash; zero disruption to work hours</li>
+              <li>January strike-down, packing and off-site storage included</li>
+            </ul>
+            <div class="xurg"><strong>Planning ahead:</strong> December installation slots are allocated first come, first served. Book a site visit to hold your date &mdash; we survey within 48 hours.</div>
+            <a href="#contact" class="btn-w" style="margin-top:30px">Book a site visit <span class="arr">&rarr;</span></a>
+          </div>
+
+          <div>
+            <div class="pkg">
+              <div class="pk">
+                <div class="pk-top"><h5>Reception Statement</h5><span class="pk-sc">1 space</span></div>
+                <p>Lobby tree, reception backdrop, entrance lighting and a photo corner. The highest-impact spend if you are doing one thing well.</p>
+              </div>
+              <div class="pk feat">
+                <div class="pk-top"><h5>Full Floor</h5><span class="pk-sc">Most chosen</span></div>
+                <p>Everything in Reception Statement plus workstation zones, cafeteria, meeting rooms and corridor decor across an entire floor.</p>
+              </div>
+              <div class="pk">
+                <div class="pk-top"><h5>Campus</h5><span class="pk-sc">Multi-floor</span></div>
+                <p>Multi-floor or multi-building programmes with facade illumination, a dedicated project manager and an on-site crew through the season.</p>
+              </div>
+              <div class="pk">
+                <div class="pk-top"><h5>Celebration Add-on</h5><span class="pk-sc">Any package</span></div>
+                <p>Christmas party, catering, live counters, Secret Santa logistics, gifting hampers and entertainment &mdash; run by the same team.</p>
+              </div>
+            </div>
+            <p class="pk-note">Every package is quoted to your space, floor plan and dates.<br/>No standard price list &mdash; you get a real number after the survey.</p>
+          </div>
         </div>
-        <div class="svc-card">
-          <h3>📊 Data &amp; BI Consulting</h3>
-          <p>Enterprise dashboards, data pipelines, performance optimization, governance frameworks, and semantic layer design.</p>
-          <div class="svc-tags"><span class="svc-tag">Power BI</span><span class="svc-tag">Microsoft Fabric</span><span class="svc-tag">DAX / M</span><span class="svc-tag">Dataflows</span></div>
+      </div>
+
+      <!-- PILLARS -->
+      <div class="pillar rv">
+        <div class="p-label">Decoration &amp; Ambience</div>
+        <div class="exp-grid">
+          <article class="exp tilt"><div class="exp-i">&#127876;</div><h4>Festive Decoration</h4><p>Christmas, Diwali, Holi, Eid, Onam and Pongal. Concept to installation to strike-down, handled as one job.</p></article>
+          <article class="exp tilt"><div class="exp-i">&#10024;</div><h4>Office Branding &amp; Signage</h4><p>Reception walls, wayfinding, vision walls and culture graphics that make a workplace look like it belongs to somebody.</p></article>
+          <article class="exp tilt"><div class="exp-i">&#127793;</div><h4>Greenscaping &amp; Ambience</h4><p>Indoor planting, living walls, scent and lighting schemes. Maintained on a monthly cycle, not dropped and forgotten.</p></article>
         </div>
-        <div class="svc-card">
-          <h3>⚙️ Custom Software</h3>
-          <p>Full-stack applications, APIs, and microservices. From MVP to enterprise scale with modern frameworks and best practices.</p>
-          <div class="svc-tags"><span class="svc-tag">React</span><span class="svc-tag">Node.js</span><span class="svc-tag">Python</span><span class="svc-tag">FastAPI</span></div>
+      </div>
+
+      <div class="pillar rv">
+        <div class="p-label">Events &amp; Production</div>
+        <div class="exp-grid">
+          <article class="exp tilt"><div class="exp-i">&#127881;</div><h4>Annual Days &amp; Award Nights</h4><p>Venue, stage, theme, script, AV, hosting and run-of-show. We rehearse it so the night itself is uneventful.</p></article>
+          <article class="exp tilt"><div class="exp-i">&#128227;</div><h4>Town Halls &amp; Offsites</h4><p>Leadership meets, quarterly town halls and team offsites &mdash; venue sourcing, travel, logistics and content support.</p></article>
+          <article class="exp tilt"><div class="exp-i">&#128640;</div><h4>Launches &amp; Client Events</h4><p>Product launches, customer meets, conferences and exhibition stands. Built to brand, delivered to deadline.</p></article>
         </div>
-        <div class="svc-card">
-          <h3>☁️ Cloud &amp; Infrastructure</h3>
-          <p>AWS, Azure, and GCP architecture. Serverless deployments, CI/CD pipelines, cost optimization, and security hardening.</p>
-          <div class="svc-tags"><span class="svc-tag">AWS</span><span class="svc-tag">Azure</span><span class="svc-tag">Docker</span><span class="svc-tag">Terraform</span></div>
+      </div>
+
+      <div class="pillar rv">
+        <div class="p-label">Food &amp; Beverage</div>
+        <div class="exp-grid">
+          <article class="exp tilt"><div class="exp-i">&#127869;&#65039;</div><h4>Corporate Catering</h4><p>Daily meals, working lunches and board dining. Menu rotation, dietary tracking and hygiene audits as standard.</p></article>
+          <article class="exp tilt"><div class="exp-i">&#127858;</div><h4>Gala Dinners &amp; Live Counters</h4><p>Event dining at scale &mdash; curated menus, live counters, chef's table formats and full service staffing.</p></article>
+          <article class="exp tilt"><div class="exp-i">&#9749;</div><h4>Pantry &amp; Cafeteria Management</h4><p>Barista stations, pantry stocking, vendor consolidation and consumption reporting you can actually budget against.</p></article>
         </div>
-        <div class="svc-card">
-          <h3>🛡️ Data Governance</h3>
-          <p>ISO-aligned frameworks, data quality monitoring, risk assessment documentation, and compliance for regulated industries.</p>
-          <div class="svc-tags"><span class="svc-tag">ISO 27001</span><span class="svc-tag">DPDP Act</span><span class="svc-tag">Data Quality</span></div>
+      </div>
+
+      <div class="pillar rv">
+        <div class="p-label">Workplace Managed Services</div>
+        <div class="exp-grid">
+          <article class="exp tilt"><div class="exp-i">&#129529;</div><h4>Facility &amp; Housekeeping</h4><p>Trained, uniformed, supervised teams on a defined scope with checklists and monthly service reporting.</p></article>
+          <article class="exp tilt"><div class="exp-i">&#128100;</div><h4>Front Desk &amp; Guest Experience</h4><p>Reception staffing, visitor management, meeting-room coordination and a guest desk that reflects your brand.</p></article>
+          <article class="exp tilt"><div class="exp-i">&#128161;</div><h4>AV, Stage &amp; Production</h4><p>Sound, lighting, LED walls, streaming and technical crew &mdash; owned kit and trusted partners, one point of contact.</p></article>
         </div>
-        <div class="svc-card">
-          <h3>📱 Mobile &amp; Web Apps</h3>
-          <p>Consumer-facing apps, PWAs, cross-platform solutions with modern UX, monetization, and KYC-compliant payment integration.</p>
-          <div class="svc-tags"><span class="svc-tag">React Native</span><span class="svc-tag">PWA</span><span class="svc-tag">Razorpay</span></div>
+      </div>
+
+      <div class="pillar rv">
+        <div class="p-label">Employee Experience</div>
+        <div class="exp-grid">
+          <article class="exp tilt"><div class="exp-i">&#129309;</div><h4>Engagement &amp; Team Building</h4><p>Themed engagement calendars, team-building days, sports days and family days that people actually turn up to.</p></article>
+          <article class="exp tilt"><div class="exp-i">&#127873;</div><h4>Gifting &amp; Hampers</h4><p>Festive gifting, onboarding welcome kits, milestone awards and client hampers &mdash; sourced, branded and delivered.</p></article>
+          <article class="exp tilt"><div class="exp-i">&#129496;</div><h4>Wellness &amp; Celebrations</h4><p>Health camps, wellness days, birthdays and work anniversaries run on a calendar so nothing is forgotten.</p></article>
+        </div>
+      </div>
+
+      <!-- HOW IT WORKS -->
+      <div class="rv" style="margin-top:76px">
+        <div class="p-label">How an Experiences engagement runs</div>
+        <div class="steps" style="margin-top:22px">
+          <div class="step"><h4>Brief</h4><p>Tell us the space, the dates and the budget band. A fifteen-minute call is usually enough to scope it.</p></div>
+          <div class="step"><h4>Survey &amp; Concept</h4><p>We visit within 48 hours, measure the space and come back with concept boards, visuals and a firm quote.</p></div>
+          <div class="step"><h4>Execute</h4><p>Our crew fabricates, installs, staffs and runs it &mdash; outside work hours wherever the site allows.</p></div>
+          <div class="step"><h4>Strike &amp; Report</h4><p>We clear down, store what repeats, and hand you photo documentation and a closing report.</p></div>
         </div>
       </div>
     </div>
   </section>
 
-  <!-- WHY US -->
-  <section id="why">
-    <div class="container reveal">
-      <div class="s-label">Why Tenqiva</div>
-      <div class="s-title">Thirteen accelerators. One philosophy.</div>
-      <div class="why-grid">
-        <div class="why-card">
-          <div class="why-num">01</div>
-          <h4>Builder Mindset</h4>
-          <p>Every consultant ships production software. We think in code, not slides.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-num">02</div>
-          <h4>Enterprise DNA</h4>
-          <p>Fortune 500 data ecosystems, compliance, and governance — battle-tested.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-num">03</div>
-          <h4>AI-First</h4>
-          <p>LLMs and intelligent automation in every solution — force multiplier, not buzzword.</p>
-        </div>
-        <div class="why-card">
-          <div class="why-num">04</div>
-          <h4>End-to-End</h4>
-          <p>Architecture to deployment to support. One team, zero handoff friction.</p>
-        </div>
+  <!-- STATS -->
+  <section style="padding-top:0">
+    <div class="container rv">
+      <div class="stats">
+        <div class="stat"><div class="n" data-count="13">13</div><div class="l">Industry accelerators</div></div>
+        <div class="stat"><div class="n" data-count="15">15</div><div class="l">Managed service lines</div></div>
+        <div class="stat"><div class="n" data-count="48" data-suffix="h">48h</div><div class="l">Site survey turnaround</div></div>
+        <div class="stat"><div class="n">1</div><div class="l">Contract, one accountable team</div></div>
       </div>
     </div>
   </section>
 
-  <!-- TECH STACK -->
-  <section id="tech" style="background:rgba(255,255,255,.012);text-align:center">
-    <div class="container reveal">
-      <div class="s-label">Technology</div>
-      <div class="s-title" style="margin:0 auto">Tools we work with every day</div>
-      <div class="tech-strip">
-        <span class="tech-pill">Power BI</span><span class="tech-pill">Microsoft Fabric</span><span class="tech-pill">React</span><span class="tech-pill">Node.js</span><span class="tech-pill">Python</span><span class="tech-pill">FastAPI</span><span class="tech-pill">PostgreSQL</span><span class="tech-pill">AWS</span><span class="tech-pill">Azure</span><span class="tech-pill">Docker</span><span class="tech-pill">LangChain</span><span class="tech-pill">GPT-4o</span><span class="tech-pill">Claude</span><span class="tech-pill">Power Automate</span><span class="tech-pill">Terraform</span><span class="tech-pill">GitHub Actions</span><span class="tech-pill">Neo4j</span><span class="tech-pill">React Native</span>
+  <!-- WHY -->
+  <section id="why" style="padding-top:40px">
+    <div class="container">
+      <div class="rv">
+        <div class="dhead"><span class="badge bg-s" style="color:var(--text);border-color:var(--border-s);background:rgba(255,255,255,.04)">Why Tenqiva</span><span class="dline"></span></div>
+        <h2 class="s-title">Two divisions. <em>One way of working.</em></h2>
+        <p class="s-desc">Whether we are shipping a product or lighting a lobby, the method is the same: plan it properly, own the delivery, document the result.</p>
+      </div>
+      <div class="why-grid rv">
+        <div class="why"><div class="why-n">01</div><h4>We execute, not advise</h4><p>Every engagement ends in something delivered and working &mdash; not a deck of recommendations.</p></div>
+        <div class="why"><div class="why-n">02</div><h4>One accountable owner</h4><p>A named project manager per engagement. One number to call when something needs to change.</p></div>
+        <div class="why"><div class="why-n">03</div><h4>Priced to the job</h4><p>Quotes built from your actual scope and space. No padded line items, no surprises on the invoice.</p></div>
+        <div class="why"><div class="why-n">04</div><h4>Documented and repeatable</h4><p>You get the files, the photos and the closing report &mdash; so next year starts ahead, not from scratch.</p></div>
       </div>
     </div>
   </section>
 
   <!-- CONTACT -->
   <section id="contact">
-    <div class="container reveal">
-      <div class="s-label">Contact</div>
-      <div class="s-title">Let's build something remarkable</div>
-      <div class="contact-grid">
-        <div class="contact-info">
-          <h3>Get in touch</h3>
-          <div class="contact-item">
-            <div class="label">Email</div>
-            <div class="value"><a href="mailto:hello@tenqiva.com">hello@tenqiva.com</a></div>
-          </div>
-          <div class="contact-item">
-            <div class="label">Phone</div>
-            <div class="value"><a href="tel:+91{{PHONE}}">+91-{{PHONE}}</a></div>
-          </div>
-          <div class="contact-item">
-            <div class="label">Registered Office</div>
-            <div class="value">{{ADDRESS}}<br/>{{CITY_STATE_PIN}}<br/>India</div>
-          </div>
-          <div class="contact-item">
-            <div class="label">Business Hours</div>
-            <div class="value">Monday – Saturday, 10:00 AM – 7:00 PM IST</div>
-          </div>
-          <div class="contact-item">
-            <div class="label">CIN / Registration</div>
-            <div class="value">{{CIN}}</div>
-          </div>
-          <div class="contact-item">
-            <div class="label">GSTIN</div>
-            <div class="value">{{GSTIN}}</div>
-          </div>
-        </div>
-        <div>
-          <form class="contact-form" id="contactForm">
-            <input type="text" id="cfName" placeholder="Your Name" required />
-            <input type="email" id="cfEmail" placeholder="Email Address" required />
-            <input type="text" id="cfCompany" placeholder="Company / Organization" />
-            <input type="text" id="cfSubject" placeholder="Subject" />
-            <textarea id="cfMessage" placeholder="How can we help you?" required></textarea>
-            <button class="btn-p" type="submit">Send Message</button>
-            <p style="margin-top:12px;font-size:.78rem;color:var(--text-m)">
-              Prefer email? Write to us directly at
-              <a href="mailto:hello@tenqiva.com" style="color:var(--accent)">hello@tenqiva.com</a>.
-              We respond within one business day.
-            </p>
-          </form>
-        </div>
+    <div class="container">
+      <div class="rv">
+        <div class="dhead"><span class="badge bg-e">Get in Touch</span><span class="dline"></span></div>
+        <h2 class="s-title">Tell us what you <em>need delivered</em></h2>
+        <p class="s-desc">Software build or office programme &mdash; tell us which, and the right team replies within one business day.</p>
       </div>
+
+      <div class="c-grid rv">
+        <div>
+          <div class="c-item"><div class="lb">Email</div><div class="vl"><a href="mailto:hello@tenqiva.com">hello@tenqiva.com</a></div></div>
+          <div class="c-item"><div class="lb">Phone</div><div class="vl"><a href="tel:+91{{PHONE}}">+91-{{PHONE}}</a></div></div>
+          <div class="c-item"><div class="lb">Registered Office</div><div class="vl">{{ADDRESS}}<br/>{{CITY_STATE_PIN}}<br/>India</div></div>
+          <div class="c-item"><div class="lb">Business Hours</div><div class="vl">Monday &ndash; Saturday, 10:00 AM &ndash; 7:00 PM IST</div></div>
+          <div class="c-item"><div class="lb">Service Coverage</div><div class="vl">Hyderabad and pan-India for Experiences engagements.<br/>Software delivered remotely, worldwide.</div></div>
+          <div class="c-item"><div class="lb">CIN / Registration</div><div class="vl">{{CIN}}</div></div>
+          <div class="c-item"><div class="lb">GSTIN</div><div class="vl">{{GSTIN}}</div></div>
+        </div>
+
+        <form class="form" id="cForm">
+          <div class="seg">
+            <label><input type="radio" name="div" value="Software" checked /><span>Software</span></label>
+            <label><input type="radio" name="div" value="Experiences" /><span>Experiences</span></label>
+          </div>
+          <input type="text" id="cfName" placeholder="Your name" required />
+          <input type="email" id="cfEmail" placeholder="Email address" required />
+          <input type="text" id="cfCompany" placeholder="Company / organisation" />
+          <input type="text" id="cfSubject" placeholder="Subject" />
+          <textarea id="cfMessage" placeholder="What do you need? For Experiences, tell us the city, approximate size of the space and your dates." required></textarea>
+          <button class="btn-p" type="submit">Send Message <span class="arr">&rarr;</span></button>
+          <p class="f-note">Prefer email? Write to <a href="mailto:hello@tenqiva.com">hello@tenqiva.com</a>.<br/>We respond within one business day.</p>
+        </form>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="cta">
+    <h2>One company. <em>Two things done properly.</em></h2>
+    <p>Software that ships and experiences that land &mdash; delivered by a team that owns the outcome.</p>
+    <div class="cta-act">
+      <a href="#contact" class="btn-p">Start a Conversation <span class="arr">&rarr;</span></a>
+      <a href="#christmas" class="btn-o">Book Christmas Decor <span class="arr">&rarr;</span></a>
     </div>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <div class="ft-inner">
-      <div class="ft-brand">
+    <div class="ft">
+      <div class="ft-b">
         <a href="/" class="logo">tenqiva<span>.</span></a>
-        <p>Thirteen intelligent accelerators, shipped at velocity. Software consulting and SaaS products for enterprises worldwide.</p>
-        <p style="margin-top:12px;font-size:.78rem;color:var(--text-m)">{{COMPANY_NAME}}<br/>CIN: {{CIN}} · GSTIN: {{GSTIN}}</p>
+        <p>Two divisions under one roof &mdash; AI-powered software products and fully managed corporate experiences.</p>
+        <div class="ft-ent">{{COMPANY_NAME}}<br/>CIN: {{CIN}} &middot; GSTIN: {{GSTIN}}</div>
       </div>
       <div class="ft-col">
-        <h5>Accelerators</h5>
-        <a href="#accelerators">Jewellery Billing</a>
-        <a href="#accelerators">LeadPro</a>
-        <a href="#accelerators">MyPaintShop</a>
-        <a href="#accelerators">BrandKavach</a>
-        <a href="#accelerators">BI Optimizer</a>
+        <h5>Software</h5>
+        <a href="#software">Accelerators</a>
+        <a href="#software">Accelerated AI</a>
+        <a href="#software">Data &amp; BI</a>
+        <a href="#software">Custom Software</a>
+        <a href="#software">Cloud &amp; Infra</a>
       </div>
       <div class="ft-col">
-        <h5>Services</h5>
-        <a href="#services">Accelerated AI</a>
-        <a href="#services">Data &amp; BI</a>
-        <a href="#services">Custom Software</a>
-        <a href="#services">Cloud &amp; Infra</a>
+        <h5>Experiences</h5>
+        <a href="#christmas">Christmas Decoration</a>
+        <a href="#experiences">Corporate Events</a>
+        <a href="#experiences">Food &amp; Beverage</a>
+        <a href="#experiences">Facility Management</a>
+        <a href="#experiences">Gifting &amp; Engagement</a>
       </div>
       <div class="ft-col">
         <h5>Company</h5>
-        <a href="#why">About</a>
-        <a href="#contact">Contact</a>
+        <a href="#why">Why Tenqiva</a>
         <a href="pricing.html">Pricing</a>
-        <a href="#">Careers</a>
+        <a href="#contact">Contact</a>
+        <a href="shipping.html">Service Delivery</a>
       </div>
     </div>
-    <div class="ft-bottom">
-      <span>&copy; 2026 {{COMPANY_NAME}}. All rights reserved. | India · Global Delivery</span>
-      <div class="ft-legal">
+    <div class="ft-bot">
+      <span>&copy; 2026 {{COMPANY_NAME}}. All rights reserved. | India &middot; Global Delivery</span>
+      <div class="ft-lg">
         <a href="pricing.html">Pricing</a>
         <a href="terms.html">Terms &amp; Conditions</a>
         <a href="privacy.html">Privacy Policy</a>
@@ -537,17 +677,103 @@
   </footer>
 
   <script>
-    document.getElementById('ham').addEventListener('click',()=>{document.getElementById('navLinks').classList.toggle('open')});
-    const obs=new IntersectionObserver(e=>{e.forEach(el=>{if(el.isIntersecting)el.target.classList.add('vis')})},{threshold:.12});
-    document.querySelectorAll('.reveal').forEach(el=>obs.observe(el));
-    document.querySelectorAll('.nav-links a').forEach(a=>{a.addEventListener('click',()=>{document.getElementById('navLinks').classList.remove('open')})});
-    document.getElementById('contactForm').addEventListener('submit',function(e){
-      e.preventDefault();
-      var v=function(id){return document.getElementById(id).value.trim()};
-      var subject=v('cfSubject')||('Website enquiry from '+(v('cfName')||'visitor'));
-      var body='Name: '+v('cfName')+'\nEmail: '+v('cfEmail')+'\nCompany: '+(v('cfCompany')||'-')+'\n\n'+v('cfMessage');
-      window.location.href='mailto:hello@tenqiva.com?subject='+encodeURIComponent(subject)+'&body='+encodeURIComponent(body);
+  (function(){
+    'use strict';
+
+    /* festive bar */
+    var bar = document.getElementById('xbar');
+    var dismissed = false;
+    try { dismissed = localStorage.getItem('tq_xbar') === 'off'; } catch(e){}
+    if (!dismissed) document.body.classList.add('bar');
+
+    /* the bar wraps on narrow screens, so measure it rather than assume a height */
+    var syncBar = function(){
+      var h = document.body.classList.contains('bar') ? Math.ceil(bar.getBoundingClientRect().height) : 0;
+      document.documentElement.style.setProperty('--barh', h + 'px');
+    };
+    syncBar();
+    window.addEventListener('resize', syncBar, {passive:true});
+    if (window.ResizeObserver) new ResizeObserver(syncBar).observe(bar);
+    if (document.fonts && document.fonts.ready) document.fonts.ready.then(syncBar);
+
+    document.getElementById('xclose').addEventListener('click', function(){
+      document.body.classList.remove('bar');
+      syncBar();
+      try { localStorage.setItem('tq_xbar','off'); } catch(e){}
     });
+
+    /* nav */
+    var nav = document.getElementById('nav'), links = document.getElementById('navLinks');
+    document.getElementById('ham').addEventListener('click', function(){ links.classList.toggle('open'); });
+    links.querySelectorAll('a').forEach(function(a){
+      a.addEventListener('click', function(){ links.classList.remove('open'); });
+    });
+    var onScroll = function(){ nav.classList.toggle('stuck', window.scrollY > 24); };
+    onScroll(); window.addEventListener('scroll', onScroll, {passive:true});
+
+    /* reveals, staggered within each group */
+    var obs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (!en.isIntersecting) return;
+        en.target.classList.add('on');
+        obs.unobserve(en.target);
+      });
+    }, {threshold:.1, rootMargin:'0px 0px -40px 0px'});
+    document.querySelectorAll('.rv').forEach(function(el){ obs.observe(el); });
+
+    /* cursor spotlight on cards */
+    document.querySelectorAll('.tilt').forEach(function(card){
+      card.addEventListener('pointermove', function(e){
+        var r = card.getBoundingClientRect();
+        card.style.setProperty('--mx', (e.clientX - r.left) + 'px');
+        card.style.setProperty('--my', (e.clientY - r.top) + 'px');
+      });
+    });
+
+    /* marquee: duplicate track for a seamless loop */
+    var track = document.getElementById('mqTrack');
+    track.innerHTML += track.innerHTML;
+
+    /* count-up stats */
+    var nums = document.querySelectorAll('.n[data-count]');
+    var nObs = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if (!en.isIntersecting) return;
+        var el = en.target, target = parseInt(el.dataset.count, 10), sfx = el.dataset.suffix || '';
+        var start = performance.now(), dur = 1100;
+        var tick = function(now){
+          var p = Math.min((now - start) / dur, 1);
+          el.textContent = Math.round(target * (1 - Math.pow(1 - p, 3))) + sfx;
+          if (p < 1) requestAnimationFrame(tick);
+        };
+        requestAnimationFrame(tick);
+        nObs.unobserve(el);
+      });
+    }, {threshold:.5});
+    nums.forEach(function(n){ nObs.observe(n); });
+
+    /* contact form */
+    document.getElementById('cForm').addEventListener('submit', function(e){
+      e.preventDefault();
+      var v = function(id){ return (document.getElementById(id).value || '').trim(); };
+      var div = (document.querySelector('input[name=div]:checked') || {}).value || 'General';
+      var subject = '[' + div + '] ' + (v('cfSubject') || ('Enquiry from ' + (v('cfName') || 'website visitor')));
+      var body = 'Division: ' + div
+        + '\nName: ' + v('cfName')
+        + '\nEmail: ' + v('cfEmail')
+        + '\nCompany: ' + (v('cfCompany') || '-')
+        + '\n\n' + v('cfMessage');
+      window.location.href = 'mailto:hello@tenqiva.com?subject=' + encodeURIComponent(subject) + '&body=' + encodeURIComponent(body);
+    });
+
+    /* deep-link into the Experiences form from Christmas CTAs */
+    document.querySelectorAll('a[href="#contact"]').forEach(function(a){
+      a.addEventListener('click', function(){
+        var near = a.closest('#christmas, #experiences');
+        if (near) { var r = document.querySelector('input[name=div][value=Experiences]'); if (r) r.checked = true; }
+      });
+    });
+  })();
   </script>
 </body>
 </html>
