@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact Us — Tenqiva</title>
+  <meta name="description" content="Contact Tenqiva — email, phone and registered office. Software enquiries and Experiences enquiries for corporate decoration, events, catering and workplace services." />
+  <meta property="og:title" content="Contact Us — Tenqiva" />
+  <meta property="og:description" content="Reach Tenqiva by email or phone, or write to our registered office in Hyderabad." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,400;12..96,600;12..96,700;12..96,800&family=Newsreader:ital,opsz,wght@0,6..72,300;1,6..72,400&display=swap" rel="stylesheet" />
+  <style>
+    :root{--bg:#07080b;--bg2:#0b0d13;--bg-card:#111320;--text:#eceae5;--text-m:#8a8c99;--text-d:#5d5f6b;
+      --accent:#d4f034;--accent2:#34b4f0;--accent3:#ff8a4c;--border:rgba(255,255,255,.07);--border-s:rgba(255,255,255,.13);
+      --r:16px;--font:'Bricolage Grotesque',sans-serif;--serif:'Newsreader',serif;--ease:cubic-bezier(.22,1,.36,1)}
+    *,*::before,*::after{margin:0;padding:0;box-sizing:border-box}
+    html{scroll-behavior:smooth}
+    body{font-family:var(--font);background:var(--bg);color:var(--text);line-height:1.7;-webkit-font-smoothing:antialiased}
+    body::after{content:'';position:fixed;inset:0;background-image:url("data:image/svg+xml,%3Csvg viewBox='0 0 256 256' xmlns='http://www.w3.org/2000/svg'%3E%3Cfilter id='n'%3E%3CfeTurbulence type='fractalNoise' baseFrequency='0.82' numOctaves='4' stitchTiles='stitch'/%3E%3C/filter%3E%3Crect width='100%25' height='100%25' filter='url(%23n)' opacity='0.035'/%3E%3C/svg%3E");pointer-events:none;z-index:999}
+    a{color:inherit;text-decoration:none}
+    nav{padding:18px 40px;display:flex;justify-content:space-between;align-items:center;border-bottom:1px solid var(--border)}
+    .logo{font-size:1.5rem;font-weight:700;letter-spacing:-.03em}.logo span{color:var(--accent)}
+    .back{color:var(--text-m);font-size:.88rem}.back:hover{color:var(--text)}
+
+    .wrap{max-width:1120px;margin:0 auto;padding:70px 24px 90px;position:relative}
+    .hero-glow{position:absolute;top:-60px;left:50%;transform:translateX(-50%);width:780px;height:420px;background:radial-gradient(ellipse,rgba(212,240,52,.07),transparent 65%);pointer-events:none}
+    h1{font-size:clamp(2.2rem,5vw,3.4rem);font-weight:800;letter-spacing:-.035em;line-height:1.08;position:relative}
+    h1 em{font-family:var(--serif);font-style:italic;font-weight:300;color:var(--accent)}
+    .lede{color:var(--text-m);font-size:1.03rem;max-width:620px;margin-top:20px;position:relative}
+
+    .two{display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-top:52px}
+    .route{border:1px solid var(--border);border-radius:20px;padding:32px 30px;background:linear-gradient(165deg,rgba(255,255,255,.04),rgba(255,255,255,.012));transition:border-color .4s,transform .35s var(--ease)}
+    .route:hover{transform:translateY(-4px)}
+    .r-a:hover{border-color:rgba(212,240,52,.32)} .r-b:hover{border-color:rgba(255,138,76,.34)}
+    .r-kick{font-size:.68rem;text-transform:uppercase;letter-spacing:.19em;font-weight:700;display:flex;align-items:center;gap:9px;margin-bottom:16px}
+    .r-a .r-kick{color:var(--accent)} .r-b .r-kick{color:var(--accent3)}
+    .r-kick i{width:7px;height:7px;border-radius:50%;background:currentColor;display:block}
+    .route h2{font-size:1.25rem;font-weight:800;letter-spacing:-.02em}
+    .route p{color:var(--text-m);font-size:.9rem;margin-top:10px;line-height:1.68}
+    .route .mail{display:inline-block;margin-top:18px;font-weight:700;font-size:.95rem;color:var(--accent2);text-decoration:underline;text-underline-offset:3px;word-break:break-all}
+    .r-list{list-style:none;margin:16px 0 0;padding:0;display:flex;flex-wrap:wrap;gap:7px}
+    .r-list li{font-size:.75rem;padding:5px 12px;border-radius:100px;border:1px solid var(--border);background:rgba(0,0,0,.25);color:var(--text-m)}
+
+    h3.sec{font-size:.72rem;text-transform:uppercase;letter-spacing:.16em;color:var(--accent);font-weight:700;margin:64px 0 20px;display:flex;align-items:center;gap:14px}
+    h3.sec::after{content:'';height:1px;flex:1;background:linear-gradient(90deg,var(--border),transparent)}
+
+    .cards{display:grid;grid-template-columns:repeat(3,1fr);gap:14px}
+    .card{border:1px solid var(--border);border-radius:var(--r);padding:26px 24px;background:var(--bg-card);transition:border-color .4s,transform .35s var(--ease)}
+    .card:hover{border-color:var(--border-s);transform:translateY(-3px)}
+    .card .lb{font-size:.69rem;text-transform:uppercase;letter-spacing:.14em;color:var(--accent);font-weight:700;margin-bottom:9px}
+    .card .vl{font-size:.98rem;line-height:1.62;word-break:break-word}
+    .card .vl a{color:var(--accent2);text-decoration:underline;text-underline-offset:2px}
+    .card .sub{color:var(--text-m);font-size:.82rem;margin-top:8px;line-height:1.6}
+
+    table{width:100%;border-collapse:collapse;margin-top:4px;font-size:.89rem}
+    th,td{padding:13px 16px;border:1px solid var(--border);text-align:left;vertical-align:top}
+    th{background:var(--bg2);color:var(--accent);font-weight:600;font-size:.8rem;text-transform:uppercase;letter-spacing:.06em}
+    td a{color:var(--accent2);text-decoration:underline;text-underline-offset:2px}
+    td strong{color:var(--text)}
+
+    .entity{border:1px solid var(--border);border-radius:var(--r);background:var(--bg2);padding:28px 26px;font-size:.9rem;color:var(--text-m);line-height:1.8}
+    .entity strong{color:var(--text)}
+
+    footer{border-top:1px solid var(--border);padding:40px 40px 28px;background:var(--bg2);text-align:center;font-size:.8rem;color:var(--text-d)}
+    .ft-contact{color:var(--text-m);font-size:.86rem;margin-bottom:14px}
+    .ft-contact a{color:var(--accent2);text-decoration:underline;text-underline-offset:2px}
+    .ft-links{display:flex;gap:18px;flex-wrap:wrap;justify-content:center;margin-bottom:12px}
+    .ft-links a{color:var(--text-d)}
+    .ft-links a:hover{color:var(--accent)}
+
+    @media(max-width:860px){
+      nav{padding:14px 20px}
+      .two,.cards{grid-template-columns:1fr}
+      .wrap{padding:48px 20px 70px}
+      table,thead,tbody,tr,td,th{display:block;width:100%}
+      thead{display:none}
+      tr{margin-bottom:12px;border:1px solid var(--border);border-radius:12px;overflow:hidden}
+      td{border:none;border-bottom:1px solid var(--border)}
+      td:last-child{border-bottom:none}
+    }
+  </style>
+</head>
+<body>
+  <nav>
+    <a href="/" class="logo">tenqiva<span>.</span></a>
+    <a href="/" class="back">&larr; Back to Home</a>
+  </nav>
+
+  <div class="wrap">
+    <div class="hero-glow"></div>
+    <h1>Talk to <em>the right team</em></h1>
+    <p class="lede">Tenqiva runs two divisions. Pick the one that matches what you need and you will reach the people who actually do the work &mdash; or just call us and we will point you the right way.</p>
+
+    <div class="two">
+      <section class="route r-a">
+        <div class="r-kick"><i></i>Division 01</div>
+        <h2>Tenqiva Software</h2>
+        <p>AI accelerators, SaaS products, data and business intelligence, custom software, cloud and managed support.</p>
+        <a class="mail" href="mailto:hello@tenqiva.com">hello@tenqiva.com</a>
+        <ul class="r-list"><li>AI &amp; LLM</li><li>Power BI</li><li>Custom Software</li><li>Cloud</li></ul>
+      </section>
+
+      <section class="route r-b">
+        <div class="r-kick"><i></i>Division 02</div>
+        <h2>Tenqiva Experiences</h2>
+        <p>Festive and year-round decoration, corporate events, catering and dining, facility and workplace services, employee engagement and gifting.</p>
+        <a class="mail" href="mailto:hello@tenqiva.com">hello@tenqiva.com</a>
+        <ul class="r-list"><li>Christmas Decor</li><li>Events</li><li>Catering</li><li>Facilities</li><li>Gifting</li></ul>
+      </section>
+    </div>
+
+    <h3 class="sec">How to reach us</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="lb">Phone</div>
+        <div class="vl"><a href="tel:+919398178943">+91-9398178943</a></div>
+        <div class="sub">Monday to Saturday, 10:00 AM to 7:00 PM IST. Closed on Sundays and public holidays.</div>
+      </div>
+      <div class="card">
+        <div class="lb">General Email</div>
+        <div class="vl"><a href="mailto:hello@tenqiva.com">hello@tenqiva.com</a></div>
+        <div class="sub">New enquiries for either division, partnerships, and anything you are not sure where to send.</div>
+      </div>
+      <div class="card">
+        <div class="lb">Registered Office</div>
+        <div class="vl">13-1-122, Plot No. 57, 2nd Floor motinagar<br/>HYDERABAD, TG, 500018<br/>India</div>
+        <div class="sub">Please write or call before visiting so someone is there to meet you.</div>
+      </div>
+    </div>
+
+    <h3 class="sec">Who to write to</h3>
+    <table>
+      <tr><th>If your question is about</th><th>Write to</th><th>What to include</th></tr>
+      <tr>
+        <td><strong>A new enquiry or quotation</strong><br/>Either division</td>
+        <td><a href="mailto:hello@tenqiva.com">hello@tenqiva.com</a></td>
+        <td>What you need, and for Experiences work the city, the kind of space and your dates.</td>
+      </tr>
+      <tr>
+        <td><strong>An existing project or service</strong><br/>Support and delivery</td>
+        <td><a href="mailto:support@tenqiva.com">support@tenqiva.com</a></td>
+        <td>Your project or work order reference and what has gone wrong.</td>
+      </tr>
+      <tr>
+        <td><strong>Invoices, payments, refunds and cancellations</strong></td>
+        <td><a href="mailto:billing@tenqiva.com">billing@tenqiva.com</a></td>
+        <td>Your invoice, order or transaction reference and the registered email on the account.</td>
+      </tr>
+      <tr>
+        <td><strong>Your personal data</strong><br/>Access, correction or erasure under the DPDP Act, 2023</td>
+        <td><a href="mailto:privacy@tenqiva.com">privacy@tenqiva.com</a></td>
+        <td>Which right you wish to exercise. See our <a href="privacy.html">Privacy Policy</a>.</td>
+      </tr>
+      <tr>
+        <td><strong>A complaint you want escalated</strong><br/>Grievance Officer</td>
+        <td><a href="mailto:grievance@tenqiva.com">grievance@tenqiva.com</a></td>
+        <td>What happened, who you dealt with, and what you would like done about it.</td>
+      </tr>
+    </table>
+
+    <h3 class="sec">Grievance Officer</h3>
+    <div class="entity">
+      Named under the Information Technology Act, 2000 and the rules made thereunder.<br/>
+      <strong>Name:</strong> MONISHA AGARWAL<br/>
+      <strong>Email:</strong> <a href="mailto:grievance@tenqiva.com" style="color:var(--accent2)">grievance@tenqiva.com</a><br/>
+      <strong>Phone:</strong> +91-9398178943<br/>
+      <strong>Address:</strong> 13-1-122, Plot No. 57, 2nd Floor motinagar, Sanathnagar I E, Balanagar, Hyd- 500018, TG
+    </div>
+
+    <h3 class="sec">Where we work</h3>
+    <div class="cards">
+      <div class="card">
+        <div class="lb">Experiences</div>
+        <div class="vl">Hyderabad and across India</div>
+        <div class="sub">Hyderabad and the surrounding Telangana region are served directly by our own crew. Other Indian cities are taken on a project basis, with any travel and logistics cost itemised in the quotation before you accept it.</div>
+      </div>
+      <div class="card">
+        <div class="lb">Software</div>
+        <div class="vl">Delivered remotely, worldwide</div>
+        <div class="sub">Consulting and product work is delivered remotely for clients in India and internationally.</div>
+      </div>
+      <div class="card">
+        <div class="lb">Languages</div>
+        <div class="vl">English, Hindi, Telugu</div>
+        <div class="sub">Write or call in whichever of these suits you best.</div>
+      </div>
+    </div>
+
+    <h3 class="sec">Company details</h3>
+    <div class="entity">
+      <strong>Registered name:</strong> TENQIVA SOLUTIONS PRIVATE LIMITED<br/>
+      <strong>CIN:</strong> U62090TS2026PTC212931<br/>
+      <strong>GSTIN:</strong> NA<br/>
+      <strong>Registered office:</strong> 13-1-122, Plot No. 57, 2nd Floor motinagar, Sanathnagar I E, Balanagar, Hyd- 500018, TG<br/>
+      <strong>Website:</strong> <a href="https://tenqiva.com" style="color:var(--accent2)">tenqiva.com</a>
+    </div>
+  </div>
+
+  <footer>
+    <div class="ft-contact">
+      <a href="mailto:hello@tenqiva.com">hello@tenqiva.com</a> &nbsp;&middot;&nbsp;
+      <a href="tel:+919398178943">+91-9398178943</a> &nbsp;&middot;&nbsp;
+      HYDERABAD, TG, 500018, India
+    </div>
+    <div class="ft-links">
+      <a href="/">Home</a>
+      <a href="pricing.html">Pricing</a>
+      <a href="contact.html">Contact Us</a>
+      <a href="terms.html">Terms</a>
+      <a href="privacy.html">Privacy</a>
+      <a href="refund.html">Refund Policy</a>
+      <a href="shipping.html">Shipping &amp; Delivery</a>
+    </div>
+    &copy; 2026 TENQIVA SOLUTIONS PRIVATE LIMITED. All rights reserved.
+  </footer>
+</body>
+</html>
